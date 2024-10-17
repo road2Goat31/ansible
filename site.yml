@@ -1,10 +1,11 @@
 ---
 
-- hosts: all 
+- hosts: all
   become: true
   pre_tasks:
 
   - name: install updates
+    tags: always
     apt:
       upgrade: dist
       update_cache: yes
@@ -12,9 +13,11 @@
 
 - hosts: web_servers
   become: true
+  gather_facts: no
   tasks:
 
   - name: install apache2 package
+    tags: apache,apache2,debian
     package:
       name:
         - apache2
@@ -22,24 +25,37 @@
       state: latest
     when: ansible_distribution == "Debian"
 
+  - name: copy html-file
+    tags: apache, apache2, http
+    copy:
+      src: default_site.html
+      dest: /var/www/html/index.html
+      owner: root
+      group: root
+      mode: 0644
+
 - hosts: db_servers
   become: true
+  gather_facts: no
   tasks:
 
   - name: install mariadb package
+    tags: db,debian,mariadb
     package:
       name:
         - mariadb-server
       state: latest
     when: ansible_distribution == "Debian"
- 
+
 - hosts: file_servers
   become: true
+  gather_facts: no
   tasks:
 
   - name: install samba package
+    tags: samba
     package:
       name:
         - samba
       state: latest
-    when: ansible_distribution == "Debian" 
+    when: ansible_distribution == "Debian"
