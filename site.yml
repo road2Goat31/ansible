@@ -11,6 +11,33 @@
       update_cache: yes
     when: ansible_distribution == "Debian"
 
+- hosts: all
+  become: true
+  gather_facts: no
+  tasks:
+
+  - name: Nutzer Simone erstellen
+    tags: always
+    user:
+      name: simone
+      groups: root
+
+  - name: SSH-Key hinzugügen
+    tags: always
+    authorized_key:
+      user: simone
+      key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJTysDTf5yJx2uu37A8A9YO9POhW1uwiwJey+tSH7j5Q ansible"
+
+  - name: add sudoers file fuer Simone
+    tags: always
+    copy:
+      src: sudoer_simone
+      dest: /etc/sudoers.d/simone
+      owner: root
+      group: root
+      mode: 0440
+
+
 - hosts: workstations
   become: true
   gather_facts: no
@@ -43,6 +70,29 @@
         - libapache2-mod-php
       state: latest
     when: ansible_distribution == "Debian"
+
+  - name: Start Apache
+    tags: apache,http
+    service:
+      name: apache2
+      state: started
+      enabled: yes
+
+  - name: change E-Mail for admin profile
+    tags: apache
+    lineinfile:
+      path: /etc/apache2/conf-available/security.conf
+      regexp: '^ServerAdmin'
+      line: Serveradmin maik.kaeseberg@shd-online.de
+    register: apache2
+
+  - name: restart Apache
+    tags: apache,http
+    service:
+      name: apache2
+      state: restarted
+    when: apache2.changed
+
 
   - name: copy html-file
     tags: apache, apache2, http
