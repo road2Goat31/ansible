@@ -14,101 +14,29 @@
 - hosts: all
   become: true
   gather_facts: no
-  tasks:
-
-  - name: SSH-Key hinzugügen
-    tags: always
-    authorized_key:
-      user: simone
-      key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJTysDTf5yJx2uu37A8A9YO9POhW1uwiwJey+tSH7j5Q ansible"
+  roles:
+  - base
 
 - hosts: workstations
   become: true
   gather_facts: no
-  tasks:
-
-  -  name: install unzip
-     package:
-        name: unzip
-
-  - name: install terraform
-    unarchive:
-      src: https://releases.hashicorp.com/terraform/0.12.28/terraform_0.12.28_linux_amd64.zip
-      dest: /usr/local/bin
-      remote_src: yes
-      mode: 0755
-      owner: root
-      group: root
-
+  roles:
+  - workstations
 
 - hosts: web_servers
   become: true
   gather_facts: no
-  tasks:
-
-  - name: install apache2 package
-    tags: apache,apache2,debian
-    package:
-      name:
-        - apache2
-        - libapache2-mod-php
-      state: latest
-    when: ansible_distribution == "Debian"
-
-  - name: Start Apache
-    tags: apache,http
-    service:
-      name: apache2
-      state: started
-      enabled: yes
-
-  - name: change E-Mail for admin profile
-    tags: apache
-    lineinfile:
-      path: /etc/apache2/conf-available/security.conf
-      regexp: '^ServerAdmin'
-      line: Serveradmin maik.kaeseberg@shd-online.de
-    register: apache2
-
-  - name: restart Apache
-    tags: apache,http
-    service:
-      name: apache2
-      state: restarted
-    when: apache2.changed
-
-
-  - name: copy html-file
-    tags: apache, apache2, http
-    copy:
-      src: default_site.html
-      dest: /var/www/html/index.html
-      owner: root
-      group: root
-      mode: 0644
+  roles:
+  - web_servers
 
 - hosts: db_servers
   become: true
   gather_facts: no
-  tasks:
-
-  - name: install mariadb package
-    tags: db,debian,mariadb
-    package:
-      name:
-        - mariadb-server
-      state: latest
-    when: ansible_distribution == "Debian"
+  roles:
+  - db_servers
 
 - hosts: file_servers
   become: true
   gather_facts: no
-  tasks:
-
-  - name: install samba package
-    tags: samba
-    package:
-      name:
-        - samba
-      state: latest
-    when: ansible_distribution == "Debian"
+  roles:
+  - file_servers
