@@ -1,0 +1,24 @@
+---
+
+- hosts: all
+  become: true
+  pre_tasks:
+
+  - name: install updates
+    tags: always
+    apt:
+      upgrade: dist
+      update_cache: yes
+    when: ansible_distribution == "Debian"
+
+- hosts: all
+  become: true
+  gather_facts: no
+  tasks:
+
+  - name: SSH-Key hinzugügen
+    tags: always
+    authorized_key:
+      user: simone
+      key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJTysDTf5yJx2uu37A8A9YO9POhW1uwiwJey+tSH7j5Q ansible"
+
