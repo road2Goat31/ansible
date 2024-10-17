@@ -2,15 +2,15 @@
   tags: apache,apache2,debian
   package:
     name:
-      - apache2
-      - libapache2-mod-php
+      - "{{ apache_package_name }}"
+      - "{{ php_package_name }}"
     state: latest
   when: ansible_distribution == "Debian"
 
 - name: Start Apache
   tags: apache,http
   service:
-    name: apache2
+    name: "{{ apache_service }}"
     state: started
     enabled: yes
 
@@ -19,15 +19,8 @@
   lineinfile:
     path: /etc/apache2/conf-available/security.conf
     regexp: '^ServerAdmin'
-    line: Serveradmin maik.kaeseberg@shd-online.de
-  register: apache2
-
-- name: restart Apache
-  tags: apache,http
-  service:
-    name: apache2
-    state: restarted
-  when: apache2.changed
+    line: Serveradmin someone@shd-online.de
+  notify: restart_apache
 
 - name: copy html-file
   tags: apache, apache2, http
