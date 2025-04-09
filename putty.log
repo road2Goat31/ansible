@@ -1,7069 +1,0 @@
-=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2025.04.09 09:10:33 =~=~=~=~=~=~=~=~=~=~=~=
-
-FLA-40F-ISP # admin
-Unknown action 0
-
-FLA-40F-ISP # config system global
-
-FLA-40F-ISP (global) #     set cli page-width 0
-
-command parse error before 'page-width'
-Command fail. Return code -61
-
-FLA-40F-ISP (global) # end
-
-FLA-40F-ISP # config system global 
-
-FLA-40F-ISP (global) # set cli-audit-log[11Doud-communication[17Dt-cert-req[K[10Di-audit-log[11Doud-communication[17Dt-cert-req[K[10Di-audit-log[11Doud-communication[17Dt-cert-req[K[10Di-audit-log[13D[Kadmin-concurrent[7Dsole-timeout[15Dforticloud-sso-login[20Dhost[Ksts-max-age[11Dttps-pki-required[12Dredirect[K[8Dssl-banned-ciphers[14D[7P[6Csuites[12Dversions[K[18Dlockout-duration[K[8Dthreshold[15Dgin-max[K[15D[K[K[K[Kend
-
-FLA-40F-ISP # show full-configuration | less
-unrecognized pipe command: 'less'
-
-command parse error in the end
-Command fail. Return code -61
-
-FLA-40F-ISP # show full-configuration | less[K[K[K[K[K
-#config-version=FGT40F-7.4.7-FW-build2731-250120:opmode=1:vdom=0:user=admin
-#conf_file_ver=237077899827092
-#buildno=2731
-#global_vdom=1
-config system global
-    set admin-concurrent enable
-    set admin-console-timeout 0
-    set admin-forticloud-sso-login disable
-    set admin-host ''
-    set admin-hsts-max-age 63072000
-    set admin-https-pki-required disable
-    set admin-https-redirect enable
-    unset admin-https-ssl-banned-ciphers
-    set admin-https-ssl-ciphersuites TLS-AES-128-GCM-SHA256 TLS-AES-256-GCM-SHA384 TLS-CHACHA20-POLY1305-SHA256
-    set admin-https-ssl-versions tlsv1-2 tlsv1-3
-    set admin-lockout-duration 60
-    set admin-lockout-threshold 3
-    set admin-login-max 100
-    set admin-port 80
-    set admin-reset-button enable
-    set admin-restrict-local disable
-    set admin-scp disable
-    set admin-server-cert "Fortinet_GUI_Server"
---More--              set admin-sport 443
---More--              set admin-ssh-grace-time 120
---More--              set admin-ssh-password enable
---More--              set admin-ssh-port 22
---More--              set admin-ssh-v1 disable
---More--              set admin-telnet enable
---More--              set admin-telnet-port 23
---More--              set admintimeout 480
---More--              set alias "FortiGate-40F"
---More--              set allow-traffic-redirect enable
---More--              set anti-replay strict
---More--              set arp-max-entry 131072
---More--              set auth-cert "Fortinet_Factory"
---More--              set auth-http-port 1000
---More--              set auth-https-port 1003
---More--              set auth-ike-saml-port 1001
---More--              set auth-keepalive disable
---More--              set auth-session-limit block-new
---More--              set auto-auth-extension-device enable
---More--              set autorun-log-fsck disable
---More--              set av-failopen pass
---More--              set av-failopen-session disable
---More--              set batch-cmdb enable
---More--              set bfd-affinity "1"
---More--              set block-session-timer 30
---More--              set br-fdb-max-entry 8192
---More--              set cert-chain-max 8
---More--              set cfg-save automatic
---More--              set check-protocol-header loose
---More--              set check-reset-range disable
---More--              set cli-audit-log disable
---More--              set cloud-communication enable
---More--              set clt-cert-req disable
---More--              set cmdbsvr-affinity "1"
---More--              set cpu-use-threshold 90
---More--              set csr-ca-attribute enable
---More--              set daily-restart disable
---More--              set default-service-source-port 1-65535
---More--              set delay-tcp-npu-session disable
---More--              set device-idle-timeout 300
---More--              set dh-params 2048
---More--              set dhcp-lease-backup-interval 60
---More--              set dnsproxy-worker-count 1
---More--              set early-tcp-npu-session disable
---More--              set extender-controller-reserved-network 10.252.0.1 255.255.0.0
---More--              set fds-statistics enable
---More--              unset fgd-alert-subscription
---More--              set forticonverter-config-upload disable
---More--              set forticonverter-integration disable
---More--              set fortiextender enable
---More--              set fortiextender-data-port 25246
---More--              set fortiextender-discovery-lockdown disable
---More--              set fortiextender-provision-on-authorization disable
---More--              set fortiextender-vlan-mode disable
---More--              set fortigslb-integration disable
---More--              set fortiservice-port 8013
---More--              set fortitoken-cloud enable
---More--              set fortitoken-cloud-push-status enable
---More--              set fortitoken-cloud-sync-interval 24
---More--              set gui-app-detection-sdwan disable
---More--              set gui-auto-upgrade-setup-warning disable
---More--              set gui-cdn-usage enable
---More--              set gui-certificates enable
---More--              set gui-custom-language disable
---More--              set gui-date-format yyyy/MM/dd
---More--              set gui-date-time-source system
---More--              set gui-device-latitude ''
---More--              set gui-device-longitude ''
---More--              set gui-display-hostname disable
---More--              set gui-firmware-upgrade-warning enable
---More--              set gui-forticare-registration-setup-warning enable
---More--              set gui-fortigate-cloud-sandbox disable
---More--              set gui-ipv6 disable
---More--              set gui-local-out disable
---More--              set gui-replacement-message-groups disable
---More--              set gui-rest-api-cache disable
---More--              set gui-theme jade
---More--              set gui-wireless-opensecurity disable
---More--              set gui-workflow-management disable
---More--              set ha-affinity "1"
---More--              set honor-df enable
---More--              set hostname "FLA-40F-ISP"
---More--              set igmp-state-limit 3200
---More--              set interface-subnet-usage enable
---More--              set internet-service-database standard
---More--              set ip-fragment-mem-thresholds 32
---More--              set ip-src-port-range 1024-25000
---More--              set ipsec-asic-offload enable
---More--              set ipsec-ha-seqjump-rate 10
---More--              set ipsec-hmac-offload enable
---More--              set ipv6-accept-dad 1
---More--              set ipv6-allow-anycast-probe disable
---More--              set ipv6-allow-local-in-silent-drop enable
---More--              set ipv6-allow-multicast-probe disable
---More--              set ipv6-allow-traffic-redirect enable
---More--              set language english
---More--              set ldapconntimeout 500
---More--              set lldp-reception disable
---More--              set lldp-transmission disable
---More--              set log-single-cpu-high disable
---More--              set log-ssl-connection disable
---More--              set log-uuid-address disable
---More--              set login-timestamp disable
---More--              set management-ip ''
---More--              set management-port-use-admin-sport enable
---More--              set management-vdom "root"
---More--              set max-route-cache-size 0
---More--              set memory-use-threshold-extreme 95
---More--              set memory-use-threshold-green 82
---More--              set memory-use-threshold-red 88
---More--              set miglogd-children 0
---More--              set multi-factor-authentication optional
---More--              set ndp-max-entry 0
---More--              set npu-neighbor-update disable
---More--              set pmtu-discovery disable
---More--              set policy-auth-concurrent 0
---More--              set post-login-banner disable
---More--              set pre-login-banner disable
---More--              set private-data-encryption disable
---More--              set proxy-auth-lifetime disable
---More--              set proxy-auth-timeout 10
---More--              set proxy-cert-use-mgmt-vdom disable
---More--              set proxy-hardware-acceleration enable
---More--              set proxy-keep-alive-mode session
---More--              set proxy-resource-mode disable
---More--              set proxy-worker-count 0
---More--              set purdue-level 3
---More--              set quic-ack-thresold 3
---More--              set quic-congestion-control-algo cubic
---More--              set quic-max-datagram-size 1500
---More--              set quic-pmtud enable
---More--              set quic-tls-handshake-timeout 5
---More--              set quic-udp-payload-size-shaping-per-cid enable
---More--              set radius-port 1812
---More--              set reboot-upon-config-restore enable
---More--              set refresh 0
---More--              set remoteauthtimeout 5
---More--              set reset-sessionless-tcp disable
---More--              set rest-api-key-url-query disable
---More--              set revision-backup-on-logout disable
---More--              set revision-image-auto-backup disable
---More--              set scanunit-count 0
---More--              set security-rating-run-on-schedule enable
---More--              set send-pmtu-icmp enable
---More--              set sflowd-max-children-num 3
---More--              set snat-route-change disable
---More--              set special-file-23-support disable
---More--              set speedtest-server disable
---More--              set speedtestd-ctrl-port 5200
---More--              set speedtestd-server-port 5201
---More--              set ssl-min-proto-version TLSv1-2
---More--              set ssl-static-key-ciphers enable
---More--              set sslvpn-max-worker-count 0
---More--              set sslvpn-web-mode disable
---More--              set strict-dirty-session-check enable
---More--              set strong-crypto enable
---More--              set switch-controller enable
---More--              set switch-controller-reserved-network 10.255.0.1 255.255.0.0
---More--              set sys-perf-log-interval 5
---More--              set tcp-halfclose-timer 120
---More--              set tcp-halfopen-timer 10
---More--              set tcp-option enable
---More--              set tcp-rst-timer 5
---More--              set tcp-timewait-timer 1
---More--              set timezone "Europe/Berlin"
---More--              set traffic-priority tos
---More--              set traffic-priority-level medium
---More--              set two-factor-email-expiry 60
---More--              set two-factor-fac-expiry 60
---More--              set two-factor-ftk-expiry 60
---More--              set two-factor-ftm-expiry 72
---More--              set two-factor-sms-expiry 60
---More--              set udp-idle-timer 180
---More--              set url-filter-count 1
---More--              set user-device-store-max-devices 20112
---More--              set user-device-store-max-unified-mem 100562739
---More--              set user-device-store-max-users 20112
---More--              set vdom-mode no-vdom
---More--              set vip-arp-range restricted
---More--              set virtual-switch-vlan disable
---More
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
---              set vpn-ems-sn-check disable
---More--              set wad-memory-change-granularity 10
---More--              set wad-restart-mode none
---More--              set wad-source-affinity enable
---More--              set wad-worker-count 0
---More--              set wifi-ca-certificate "Fortinet_Wifi_CA"
---More--              set wifi-certificate "Fortinet_Wifi"
---More--              set wimax-4g-usb disable
---More--              set wireless-controller enable
---More--              set wireless-controller-port 5246
---More--              set fds-statistics-period 60
---More--          end
---More--          config system accprofile
---More--              edit "prof_admin"
---More--                  set comments ''
---More--                  set secfabgrp read-write
---More--                  set ftviewgrp read-write
---More--                  set authgrp read-write
---More--                  set sysgrp read-write
---More--                  set netgrp read-write
---More--                  set loggrp read-write
---More--                  set fwgrp read-write
---More--                  set vpngrp read-write
---More--                  set utmgrp read-write
---More--                  set wifi read-write
---More--                  set admintimeout-override disable
---More--                  set cli-diagnose disable
---More--                  set cli-get enable
---More--                  set cli-show enable
---More--                  set cli-exec enable
---More--                  set cli-config enable
---More--                  set system-execute-ssh enable
---More--                  set system-execute-telnet enable
---More--              next
---More--              edit "admin_read_checkmk"
---More--                  set comments ''
---More--                  set secfabgrp read-write
---More--                  set ftviewgrp read-write
---More--                  set authgrp read-write
---More--                  set sysgrp read-write
---More--                  set netgrp read-write
---More--                  set loggrp read-write
---More--                  set fwgrp read-write
---More--                  set vpngrp read-write
---More--                  set utmgrp read-write
---More--                  set wifi read-write
---More--                  set admintimeout-override disable
---More--                  set cli-diagnose disable
---More--                  set cli-get disable
---More--                  set cli-show disable
---More--                  set cli-exec disable
---More--                  set cli-config disable
---More--                  set system-execute-ssh enable
---More--                  set system-execute-telnet enable
---More--              next
---More--          end
---More--          config system npu
---More--              set dedicated-management-cpu disable
---More--              set capwap-offload enable
---More--              set ipsec-mtu-override disable
---More--              set split-ipsec-engines disable
---More--              config priority-protocol
---More--                  set bgp enable
---More--                  set slbc enable
---More--                  set bfd enable
---More--              end
---More--          end
---More--          config system np6xlite
---More--              edit "np6xlite_0"
---More--                  set fastpath enable
---More--                  set per-session-accounting traffic-log-only
---More--                  set garbage-session-collector disable
---More--                  set session-collector-interval 64
---More--                  set session-timeout-interval 40
---More--                  set session-timeout-random-range 8
---More--                  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-set session-timeout-fixed disable
---More--                  set ipsec-inner-fragment disable
---More--                  set ipsec-throughput-msg-frequency disable
---More--                  set ipsec-sts-timeout 5
---More--                  config hpe
---More--                      set tcpsyn-max 600000
---More--                      set tcpsyn-ack-max 600000
---More--                      set tcpfin-rst-max 600000
---More--                      set tcp-others-max 600000
---More--                      set udp-max 600000
---More--                      set icmp-max 200000
---More--                      set sctp-max 200000
---More--                      set esp-max 200000
---More--                      set ip-frag-max 200000
---More--                      set ip-others-max 200000
---More--                      set arp-max 200000
---More--                      set l2-others-max 200000
---More--                      set pri-type-max 200000
---More--                      set enable-shaper disable
---More--                  end
---More--                  config fp-anomaly
---More--                      set tcp-syn-fin allow
---More--                      set tcp-fin-noack trap-to-host
---More--                      set tcp-fin-only trap-to-host
---More--                      set tcp-no-flag allow
---More--                      set tcp-syn-data allow
---More--                      set tcp-winnuke trap-to-host
---More--                      set tcp-land trap-to-host
---More--                      set udp-land trap-to-host
---More--                      set icmp-land trap-to-host
---More--                      set icmp-frag allow
---More--                      set ipv4-land trap-to-host
---More--                      set ipv4-proto-err trap-to-host
---More--                      set ipv4-unknopt trap-to-host
---More--                      set ipv4-optrr trap-to-host
---More--                      set ipv4-optssrr trap-to-host
---More--                      set ipv4-optlsrr trap-to-host
---More--                      set ipv4-optstream trap-to-host
---More--                      set ipv4-optsecurity trap-to-host
---More--                      set ipv4-opttimestamp trap-to-host
---More--                      set ipv4-csum-err drop
---More--                      set tcp-csum-err drop
---More--                      set udp-csum-err drop
---More--                      set icmp-csum-err drop
---More--                      set ipv6-land trap-to-host
---More--                      set ipv6-proto-err trap-to-host
---More--                      set ipv6-unknopt trap-to-host
---More--                      set ipv6-saddr-err trap-to-host
---More--                      set ipv6-daddr-err trap-to-host
---More--                      set ipv6-optralert trap-to-host
---More--                      set ipv6-optjumbo trap-to-host
---More--                      set ipv6-opttunnel trap-to-host
---More--                      set ipv6-opthomeaddr trap-to-host
---More--                      set ipv6-optnsap trap-to-host
---More--                      set ipv6-optendpid trap-to-host
---More--                      set ipv6-optinvld trap-to-host
---More--                  end
---More--              next
---More--          end
---More--          config system vdom-link
---More--          end
---More--          config wireless-controller inter-controller
---More--              set inter-controller-mode disable
---More--              set l3-roaming disable
-
---More--              set inter-controller-key ENC c2YudAW2joA6/aNwBD6TjGgjUM4mbh6wu85QXoe6eJIdtIFAbYUgVo1hSRci7ATU47OCPCOd9MNEouar3AxIpB0loa5wjCivui0Gf+GzEB3SWOuzLQxCaJXRUUOKyBx/7Lw562mp9EyGn4GaSwoGR8shIqt+ckddNedA5yeMlVgX7P12CyShS9Cpj
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8RYobfoZasEKFlmMjY3dkVA
---More--              set inter-controller-pri primary
---More--              set fast-failover-max 10
---More--              set fast-failover-wait 10
---More--          end
---More--          config wireless-controller global
---More--              set name ''
---More--              set location ''
---More--              set acd-process-count 0
---More--              set wpad-process-count 0
---More--              set image-download enable
---More--              set rolling-wtp-upgrade disable
---More--              set rolling-wtp-upgrade-threshold "-80"
---More--              set max-retransmit 3
---More--              set control-message-offload ebp-frame aeroscout-tag ap-list sta-list sta-cap-list stats aeroscout-mu sta-health spectral-analysis
---More--              set data-ethernet-II enable
---More--              set link-aggregation disable
---More--              set mesh-eth-type 8755
---More--              set fiapp-eth-type 5252
---More--              set discovery-mc-addr 224.0.1.140
---More--              set max-clients 0
---More--              set rogue-scan-mac-adjacency 7
---More--              set ipsec-base-ip 169.254.0.1
---More--              set wtp-share disable
---More--              set tunnel-mode compatible
---More--              set nac-interval 120
---More--              set ap-log-server disable
---More--              set max-sta-cap 0
---More--              set max-sta-cap-wtp 8
---More--              set max-rogue-ap 0
---More--              set max-rogue-ap-wtp 16
---More--              set max-rogue-sta 0
---More--              set max-ble-device 0
---More--          end
---More--          config system switch-interface
---More--          end
---More--          config system interface
---More--              edit "wan"
---More--                  set vdom "root"
---More--                  set vrf 0
---More--                  set fortilink disable
---More--                  set mode static
---More--                  set dhcp-relay-interface-select-method auto
---More--                  set dhcp-relay-service disable
---More--                  set ip 192.168.20.254 255.255.255.0
---More--                  set allowaccess ping
---More--                  set fail-detect disable
---More--                  set pptp-client disable
---More--                  set arpforward enable
---More--                  set broadcast-forward disable
---More--                  set bfd global
---More--                  set l2forward disable
---More--                  set icmp-send-redirect enable
---More--                  set icmp-accept-redirect enable
---More--                  set reachable-time 30000
---More--                  set vlanforward disable
---More--                  set stpforward disable
---More--                  set ips-sniffer-mode disable
---More--                  set ident-accept disable
---More--                  set ipmac disable
---More--                  set subst disable
---More--                  set substitute-dst-mac 00:00:00:00:00:00
---More--                  set status up
---More--                  set netbios-forward disable
---More--                  set wins-ip 0.0.0.0
---More--                  set type physical
---More--                  set netflow-sampler disable
---More--                  set sflow-sampler disable
---More--                  set src-check enable
---More--                  set sample-rate 2000
---More--                  set polling-interval 20
---More--                  set sample-direction both
---More--                  set tcp-mss 0
---More--                  set inbandwidth 0
---More--                  set outbandwidth 0
---More--      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            set egress-shaping-profile ''
---More--                  set ingress-shaping-profile ''
---More--                  set spillover-threshold 0
---More--                  set ingress-spillover-threshold 0
---More--                  set weight 0
---More--                  set external disable
---More--                  set trunk disable
---More--                  set description ''
---More--                  set alias "WAN-Port7-101F"
---More--                  set l2tp-client disable
---More--                  set security-mode none
---More--                  set ike-saml-server ''
---More--                  set device-identification disable
---More--                  set lldp-reception enable
---More--                  set lldp-transmission enable
---More--                  set lldp-network-policy ''
---More--                  set estimated-upstream-bandwidth 0
---More--                  set estimated-downstream-bandwidth 0
---More--                  set measured-upstream-bandwidth 0
---More--                  set measured-downstream-bandwidth 0
---More--                  set bandwidth-measure-time 0
---More--                  set monitor-bandwidth disable
---More--                  set vrrp-virtual-mac disable
---More--                  set role wan
---More--                  set snmp-index 1
---More--                  set secondary-IP disable
---More--                  set preserve-session-route disable
---More--                  set auto-auth-extension-device disable
---More--                  set ap-discover enable
---More--                  set ip-managed-by-fortiipam inherit-global
---More--                  set switch-controller-mgmt-vlan 4094
---More--                  set switch-controller-igmp-snooping-proxy disable
---More--                  set switch-controller-igmp-snooping-fast-leave disable
---More--                  set swc-first-create 0
---More--                  set eap-supplicant disable
---More--                  config ipv6
---More--                      set ip6-mode static
---More--                      set nd-mode basic
---More--                      set ip6-address ::/0
---More--                      unset ip6-allowaccess
---More--                      set icmp6-send-redirect enable
---More--                      set ra-send-mtu enable
---More--                      set ip6-reachable-time 0
---More--                      set ip6-retrans-time 0
---More--                      set ip6-hop-limit 0
---More--                      set dhcp6-prefix-delegation disable
---More--                      set dhcp6-information-request disable
---More--                      set vrrp-virtual-mac6 disable
---More--                      set vrip6_link_local ::
---More--                      set ip6-send-adv disable
---More--                      set autoconf disable
---More--                      set dhcp6-relay-service disable
---More--                  end
---More--                  set priority 1
---More--                  set dhcp-relay-source-ip 0.0.0.0
---More--                  set dhcp-relay-circuit-id ''
---More--                  set dhcp-client-identifier ''
---More--                  set dhcp-renew-time 0
---More--                  set idle-timeout 0
---More--                  set disc-retry-timeout 1
---More--                  set padt-retry-timeout 1
---More--                  set dns-server-override enable
---More--                  set dns-server-protocol cleartext
---More--                  set speed auto
---More--                  set wccp disable
---More--                  set drop-overlapped-fragment disable
---More--                  set drop-fragment disable
---More--                  set mtu-override disabl
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-e
---More--              next
---More--              edit "lan1"
---More--                  set vdom "root"
---More--                  set vrf 0
---More--                  set fortilink disable
---More--                  set mode static
---More--                  set dhcp-relay-interface-select-method auto
---More--                  set dhcp-relay-service disable
---More--                  set ip 192.168.10.254 255.255.255.0
---More--                  set allowaccess ssh
---More--                  set fail-detect disable
---More--                  set pptp-client disable
---More--                  set arpforward enable
---More--                  set broadcast-forward disable
---More--                  set bfd global
---More--                  set l2forward disable
---More--                  set icmp-send-redirect enable
---More--                  set icmp-accept-redirect enable
---More--                  set reachable-time 30000
---More--                  set vlanforward disable
---More--                  set stpforward disable
---More--                  set ips-sniffer-mode disable
---More--                  set ident-accept disable
---More--                  set ipmac disable
---More--                  set subst disable
---More--                  set substitute-dst-mac 00:00:00:00:00:00
---More--                  set status up
---More--                  set netbios-forward disable
---More--                  set wins-ip 0.0.0.0
---More--                  set type physical
---More--                  set netflow-sampler disable
---More--                  set sflow-sampler disable
---More--                  set src-check enable
---More--                  set sample-rate 2000
---More--                  set polling-interval 20
---More--                  set sample-direction both
---More--                  set tcp-mss 0
---More--                  set inbandwidth 0
---More--                  set outbandwidth 0
---More--                  set egress-shaping-profile ''
---More--                  set ingress-shaping-profile ''
---More--                  set spillover-threshold 0
---More--                  set ingress-spillover-threshold 0
---More--                  set weight 0
---More--                  set external disable
---More--                  set trunk disable
---More--                  set description ''
---More--                  set alias "lan1-BSA40F"
---More--                  set l2tp-client disable
---More--                  set security-mode none
---More--                  set ike-saml-server ''
---More--                  set device-identification enable
---More--                  set device-user-identification enable
---More--                  set lldp-reception enable
---More--                  set lldp-transmission enable
---More--                  set lldp-network-policy ''
---More--                  set estimated-upstream-bandwidth 0
---More--                  set estimated-downstream-bandwidth 0
---More--                  set measured-upstream-bandwidth 0
---More--                  set measured-downstream-bandwidth 0
---More--                  set bandwidth-measure-time 0
---More--                  set monitor-bandwidth disable
---More--                  set vrrp-virtual-mac disable
---More--                  set role lan
---More--                  set snmp-index 2
---More--                  set secondary-IP disable
---More--                  set preserve-session-route disable
---More--                  set auto-auth-extension-device disable
---More--                  set ap-discover enable
---More--                  set ip-managed-by-fortiipam inherit-global
---More--                  set switch-controller-mgmt-vlan 4094
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
---More--                  set switch-controller-igmp-snooping-proxy disable
---More--                  set switch-controller-igmp-snooping-fast-leave disable
---More--                  set swc-first-create 0
---More--                  set eap-supplicant disable
---More--                  config ipv6
---More--                      set ip6-mode static
---More--                      set nd-mode basic
---More--                      set ip6-address ::/0
---More--                      unset ip6-allowaccess
---More--                      set icmp6-send-redirect enable
---More--                      set ra-send-mtu enable
---More--                      set ip6-reachable-time 0
---More--                      set ip6-retrans-time 0
---More--                      set ip6-hop-limit 0
---More--                      set dhcp6-prefix-delegation disable
---More--                      set dhcp6-information-request disable
---More--                      set vrrp-virtual-mac6 disable
---More--                      set vrip6_link_local ::
---More--                      set ip6-send-adv disable
---More--                      set autoconf disable
---More--                      set dhcp6-relay-service disable
---More--                  end
---More--                  set priority 1
---More--                  set dhcp-relay-source-ip 0.0.0.0
---More--                  set dhcp-relay-circuit-id ''
---More--                  set dhcp-client-identifier ''
---More--                  set dhcp-renew-time 0
---More--                  set idle-timeout 0
---More--                  set disc-retry-timeout 1
---More--                  set padt-retry-timeout 1
---More--                  set dns-server-override enable
---More--                  set dns-server-protocol cleartext
---More--                  set speed auto
---More--                  set wccp disable
---More--                  set drop-overlapped-fragment disable
---More--                  set drop-fragment disable
---More--                  set mtu-override disable
---More--              next
---More--              edit "lan2"
---More--                  set vdom "root"
---More--                  set vrf 0
---More-- 
-                 set fortilink disable
---More--                  set mode static
---More--                  set dhcp-relay-interface-select-method auto
---More--                  set dhcp-relay-service disable
---More--                  set ip 192.168.11.254 255.255.255.0
---More--                  set allowaccess ping
---More--                  set fail-detect disable
---More--                  set pptp-client disable
---More--                  set arpforward enable
---More--                  set broadcast-forward disable
---More--                  set bfd global
---More--                  set l2forward disable
---More--                  set icmp-send-redirect enable
---More--                  set icmp-accept-redirect enable
---More--                  set reachable-time 30000
---More--                  set vlanforward disable
---More--                  set stpforward disable
---More--                  set ips-sniffer-mode disable
---More--                  set ident-accept disable
---More--                  set ipmac disable
---More--                  set subst disable
---More--                  set substitute-dst-mac 00:00:00:00:00:00
---More--                  set status up
---More--                  set netbios-forward disable
---More--                  set wins-ip 0.0.0.0
---More--                  set type physical
---More--                  set netflow-sampler disable
---More--                  set sflow-sampler disable
---More--                  set src-check enable
---More--                 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- set sample-rate 2000
---More--                  set polling-interval 20
---More--                  set sample-direction both
---More--                  set tcp-mss 0
---More--                  set inbandwidth 0
---More--                  set outbandwidth 0
---More--                  set egress-shaping-profile ''
---More--                  set ingress-shaping-profile ''
---More--                  set spillover-threshold 0
---More--                  set ingress-spillover-threshold 0
---More--                  set weight 0
---More--                  set external disable
---More--                  set trunk disable
---More--                  set description ''
---More--                  set alias "lan2-BSA40F"
---More--                  set l2tp-client disable
---More--                  set security-mode none
---More--                  set ike-saml-server ''
---More--                  set device-identification enable
---More--                  set device-user-identification enable
---More--                  set lldp-reception enable
---More--                  set lldp-transmission enable
---More--                  set lldp-network-policy ''
---More--                  set estimated-upstream-bandwidth 0
---More--                  set estimated-downstream-bandwidth 0
---More--                  set measured-upstream-bandwidth 0
---More--                  set measured-downstream-bandwidth 0
---More--                  set bandwidth-measure-time 0
---More--                  set monitor-bandwidth disable
---More--                  set vrrp-virtual-mac disable
---More--                  set role lan
---More--                  set snmp-index 3
---More--                  set secondary-IP disable
---More--                  set preserve-session-route disable
---More--                  set auto-auth-extension-device disable
---More--                  set ap-discover enable
---More--                  set ip-managed-by-fortiipam inherit-global
---More--                  set switch-controller-mgmt-vlan 4094
---More--                  set switch-controller-igmp-snooping-proxy disable
---More--                  set switch-controller-igmp-snooping-fast-leave disable
---More--                  set swc-first-create 0
---More--                  set eap-supplicant disable
---More--                  config ipv6
---More--                      set ip6-mode static
---More--                      set nd-mode basic
---More--                      set ip6-address ::/0
---More--                      unset ip6-allowaccess
---More--                      set icmp6-send-redirect enable
---More--                      set ra-send-mtu enable
---More--                      set ip6-reachable-time 0
---More--                      set ip6-retrans-time 0
---More--                      set ip6-hop-limit 0
---More--                      set dhcp6-prefix-delegation disable
---More--                      set dhcp6-information-request disable
---More--                      set vrrp-virtual-mac6 disable
---More--                      set vrip6_link_local ::
---More--                      set ip6-send-adv disable
---More--                      set autoconf disable
---More--                      set dhcp6-relay-service disable
---More--                  end
---More--                  set priority 1
---More--                  set dhcp-relay-source-ip 0.0.0.0
---More--                  set dhcp-relay-circuit-id ''
---More--                  set dhcp-client-identifier ''
---More--                  set dhcp-renew-time 0
---More--                  set idle-timeout 0
---More--                  set disc-retry-timeout 1
---More--                  set padt-retry-timeout 1
---More--                  set dns-se
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-rver-override enable
---More--                  set dns-server-protocol cleartext
---More--                  set speed auto
---More--                  set wccp disable
---More--                  set drop-overlapped-fragment disable
---More--                  set drop-fragment disable
---More--                  set mtu-override disable
---More--              next
---More--              edit "lan3"
---More--                  set vdom "root"
---More--                  set dhcp-classless-route-addition disable
---More--                  set status up
---More--                  set type physical
---More--                  set trunk disable
---More--                  set description ''
---More--                  set alias ''
---More--                  set ike-saml-server ''
---More--                  set stp-edge disable
---More--                  set role undefined
---More--                  set snmp-index 4
---More--                  set eap-supplicant disable
---More--                  set speed auto
---More--              next
---More--              edit "a"
---More--                  set vdom "root"
---More--                  set vrf 0
---More--                  set fortilink disable
---More--                  set mode static
---More--                  set dhcp-relay-interface-select-method auto
---More--                  set dhcp-relay-service disable
---More--                  set ip 192.168.21.254 255.255.255.0
---More--                  set allowaccess ping
---More--                  set fail-detect disable
---More--                  set pptp-client disable
---More--                  set arpforward enable
---More--                  set broadcast-forward disable
---More--                  set bfd global
---More--                  set l2forward disable
---More--                  set icmp-send-redirect enable
---More--                  set icmp-accept-redirect enable
---More--                  set reachable-time 30000
---More--                  set vlanforward disable
---More--                  set stpforward disable
---More--                  set ips-sniffer-mode disable
---More--                  set ident-accept disable
---More--                  set ipmac disable
---More--                  set subst disable
---More--                  set substitute-dst-mac 00:00:00:00:00:00
---More--                  set status up
---More--                  set netbios-forward disable
---More--                  set wins-ip 0.0.0.0
---More--                  set type physical
---More--                  set netflow-sampler disable
---More--                  set sflow-sampler disable
---More--                  set src-check enable
---More--                  set sample-rate 2000
---More--                  set polling-interval 20
---More--                  set sample-direction both
---More--                  set tcp-mss 0
---More--                  set inbandwidth 0
---More--                  set outbandwidth 0
---More--                  set egress-shaping-profile ''
---More--                  set ingress-shaping-profile ''
---More--                  set spillover-threshold 0
---More--                  set ingress-spillover-threshold 0
---More--                  set weight 0
---More--                  set external disable
---More--                  set trunk disable
---More--                  set description ''
---More--                  set alias "a-Port8-101F"
---More--                  set l2tp-client disable
-
---More--                  set security-mode none
---More--                  set ike-saml-server ''
---More--                  set device-identification enable
---More--                  set device-user-identification enable
---More--   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-               set lldp-reception enable
---More--                  set lldp-transmission enable
---More--                  set lldp-network-policy ''
---More--                  set estimated-upstream-bandwidth 0
---More--                  set estimated-downstream-bandwidth 0
---More--                  set measured-upstream-bandwidth 0
---More--                  set measured-downstream-bandwidth 0
---More--                  set bandwidth-measure-time 0
---More--                  set monitor-bandwidth disable
---More--                  set vrrp-virtual-mac disable
---More--                  set role lan
---More--                  set snmp-index 5
---More--                  set secondary-IP disable
---More--                  set preserve-session-route disable
---More--                  set auto-auth-extension-device disable
---More--                  set ap-discover enable
---More--                  set ip-managed-by-fortiipam inherit-global
---More--                  set switch-controller-mgmt-vlan 4094
---More--                  set switch-controller-igmp-snooping-proxy disable
---More--                  set switch-controller-igmp-snooping-fast-leave disable
---More--                  set swc-first-create 0
---More--                  set eap-supplicant disable
---More--                  config ipv6
---More--                      set ip6-mode static
---More--                      set nd-mode basic
---More--                      set ip6-address ::/0
---More--                      unset ip6-allowaccess
---More--                      set icmp6-send-redirect enable
---More--                      set ra-send-mtu enable
---More--                      set ip6-reachable-time 0
---More--                      set ip6-retrans-time 0
---More--                      set ip6-hop-limit 0
---More--                      set dhcp6-prefix-delegation disable
---More--                      set dhcp6-information-request disable
---More--                      set vrrp-virtual-mac6 disable
---More--                      set vrip6_link_local ::
---More--                      set ip6-send-adv disable
---More--                      set autoconf disable
---More--                      set dhcp6-relay-service disable
---More--                  end
---More--                  set priority 1
---More--                  set dhcp-relay-source-ip 0.0.0.0
---More--                  set dhcp-relay-circuit-id ''
---More--                  set dhcp-client-identifier ''
---More--                  set dhcp-renew-time 0
---More--                  set idle-timeout 0
---More--                  set disc-retry-timeout 1
---More--                  set padt-retry-timeout 1
---More--                  set dns-server-override enable
---More--                  set dns-server-protocol cleartext
---More--                  set speed auto
---More--                  set wccp disable
---More--                  set drop-overlapped-fragment disable
---More--                  set drop-fragment disable
---More--                  set mtu-override disable
---More--              next
---More--              edit "modem"
---More--                  set vdom "root"
---More--                  set vrf 0
---More--                  set fortilink disable
---More--                  set mode pppoe
---More--                  set distance 5
---More--                  set priority 1
---More--                  set dhcp-relay-interface-select-method auto
---More--                  set dhcp-relay-service disable
---More--                  unset allowaccess
---More--                  set arpforward enable
---More--                  set broadcast-forward disable
---More--                  set bfd global
---More--               
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   set l2forward disable
---More--                  set vlanforward disable
---More--                  set stpforward disable
---More--                  set ips-sniffer-mode disable
---More--                  set ident-accept disable
---More--                  set ipmac disable
---More--                  set subst disable
---More--                  set substitute-dst-mac 00:00:00:00:00:00
---More--                  set status down
---More--                  set netbios-forward disable
---More--                  set wins-ip 0.0.0.0
---More--                  set type physical
---More--                  set netflow-sampler disable
---More--                  set sflow-sampler disable
---More--                  set src-check enable
---More--                  set sample-rate 2000
---More--                  set polling-interval 20
---More--                  set sample-direction both
---More--                  set tcp-mss 0
---More--                  set inbandwidth 0
---More--                  set outbandwidth 0
---More--                  set egress-shaping-profile ''
---More--                  set ingress-shaping-profile ''
---More--                  set spillover-threshold 0
---More--                  set ingress-spillover-threshold 0
---More--                  set weight 0
---More--                  set external disable
---More--                  set trunk disable
---More--                  set description ''
---More--                  set alias ''
---More--                  set security-mode none
---More--                  set ike-saml-server ''
---More--                  set device-identification disable
---More--                  set lldp-reception vdom
---More--                  set lldp-transmission vdom
---More--                  set estimated-upstream-bandwidth 0
---More--                  set estimated-downstream-bandwidth 0
---More--                  set measured-upstream-bandwidth 0
---More--                  set measured-downstream-bandwidth 0
---More--                  set bandwidth-measure-time 0
---More--                  set monitor-bandwidth disable
---More--                  set vrrp-virtual-mac disable
-
---More--                  set role undefined
---More--                  set snmp-index 6
---More--                  set preserve-session-route disable
---More--                  set auto-auth-extension-device disable
---More--                  set ap-discover enable
---More--                  set switch-controller-mgmt-vlan 4094
---More--                  set switch-controller-igmp-snooping-proxy disable
---More--                  set switch-controller-igmp-snooping-fast-leave disable
---More--                  set swc-first-create 0
---More--                  set eap-supplicant disable
---More--                  config ipv6
---More--                      set ip6-mode static
---More--                      set nd-mode basic
---More--                      set ip6-address ::/0
---More--                      unset ip6-allowaccess
---More--                      set icmp6-send-redirect enable
---More--                      set ra-send-mtu enable
---More--                      set ip6-reachable-time 0
---More--                      set ip6-retrans-time 0
---More--                      set ip6-hop-limit 0
---More--                      set dhcp6-prefix-delegation disable
---More--                      set dhcp6-information-request disable
---More--                      set vrrp-virtual-mac6 disable
---More--                      set vrip6_link_local ::
---More--                      set ip6-send-adv disable
---More--                      set autoconf disable
---More--                      set dhcp6-relay-service disable
---More--      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            end
---More--                  set dhcp-relay-source-ip 0.0.0.0
---More--                  set dhcp-relay-circuit-id ''
---More--                  set dhcp-client-identifier ''
---More--                  set dhcp-renew-time 0
---More--                  set ipunnumbered 0.0.0.0
---More--                  set username ''
---More--                  set pppoe-egress-cos cos0
---More--                  set password ENC w0qR0Hkq2cA/ORvcQ9z779w19VFoC2nlCzgwfE1Nnk1+Yzl6dJZHcWrRjgSZqS3n1Y9FEdBZ0erIg3yUPzyXG1OFJi4CXJy18mIT8u/uVz8Jn68Y3Au0gT1Ti4aky7LsrLVjx4BwWdLM4CUm4YgQDS1DOCs1UaqsKk0RDuLLI/2C0TwEQLtMKdsM1AGPGEiFyEEMgVlmMjY3dkVA
---More--                  set idle-timeout 0
---More--                  set disc-retry-timeout 1
---More--                  set padt-retry-timeout 1
---More--                  set service-name ''
---More--                  set ac-name ''
---More--                  set lcp-echo-interval 5
---More--                  set lcp-max-echo-fails 3
---More--                  set defaultgw enable
---More--                  set dns-server-override enable
---More--                  set dns-server-protocol cleartext
---More--                  set auth-type auto
---More--                  set pptp-client disable
---More--                  set wccp disable
---More--                  set drop-overlapped-fragment disable
---More--                  set drop-fragment disable
---More--                  set mtu-override disable
-
---More--              next
---More--              edit "naf.root"
---More--                  set vdom "root"
---More--                  set vrf 0
---More--                  set distance 5
---More--                  set priority 1
---More--                  set dhcp-relay-interface-select-method auto
---More--                  set dhcp-relay-service disable
---More--                  set ip 0.0.0.0 0.0.0.0
---More--                  set arpforward enable
---More--                  set broadcast-forward disable
---More--                  set bfd global
---More--                  set icmp-send-redirect enable
---More--                  set icmp-accept-redirect enable
---More--                  set reachable-time 30000
---More--                  set ips-sniffer-mode disable
---More--                  set ident-accept disable
---More--                  set ipmac disable
---More--                  set status up
---More--                  set netbios-forward disable
---More--                  set wins-ip 0.0.0.0
---More--                  set type tunnel
---More--                  set netflow-sampler disable
---More--                  set sflow-sampler disable
---More--                  set src-check disable
---More--                  set sample-rate 2000
---More--                  set polling-interval 20
---More--                  set sample-direction both
---More--                  set tcp-mss 0
---More--                  set inbandwidth 0
---More--                  set outbandwidth 0
---More--                  set egress-shaping-profile ''
---More--                  set ingress-shaping-profile ''
---More--                  set spillover-threshold 0
---More--                  set ingress-spillover-threshold 0
---More--                  set weight 0
---More--                  set external disable
---More--                  set trunk disable
---More--                  set description ''
---More--                  set alias ''
---More--                  set l2tp-client disable
---More--                  set security-mode none
---More--                  set ike-saml-server ''
---More--                  set estimated-upstream-bandwidth 0
---More--                  set estimated-downstream-bandwidth 0
---More--        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          set measured-upstream-bandwidth 0
---More--                  set measured-downstream-bandwidth 0
---More--                  set bandwidth-measure-time 0
---More--                  set monitor-bandwidth disable
---More--                  set role undefined
---More--                  set snmp-index 7
---More--                  set preserve-session-route disable
---More--                  set auto-auth-extension-device disable
---More--                  set ap-discover enable
---More--                  set switch-controller-igmp-snooping-proxy disable
---More--                  set switch-controller-igmp-snooping-fast-leave disable
---More--                  set eap-supplicant disable
---More--                  config ipv6
---More--                      set nd-mode basic
---More--                      set ip6-address ::/0
---More--                      set icmp6-send-redirect enable
---More--                      set ra-send-mtu enable
---More--                      set ip6-reachable-time 0
---More--                      set ip6-retrans-time 0
---More--                      set ip6-hop-limit 0
---More--                      set ip6-prefix-mode dhcp6
---More--                      set dhcp6-prefix-delegation disable
---More--                      set dhcp6-information-request disable
---More--                  end
---More--                  set dhcp-relay-source-ip 0.0.0.0
---More--                  set dhcp-relay-circuit-id ''
---More--                  set dns-server-override enable
---More--                  set dns-server-protocol cleartext
---More--                  set wccp disable
-
---More--              next
---More--              edit "l2t.root"
---More--                  set vdom "root"
---More--                  set vrf 0
---More--                  set distance 5
---More--                  set priority 1
---More--                  set dhcp-relay-interface-select-method auto
---More--                  set dhcp-relay-service disable
---More--                  set ip 0.0.0.0 0.0.0.0
---More--                  unset allowaccess
---More--                  set arpforward enable
---More--                  set broadcast-forward disable
---More--                  set bfd global
---More--                  set icmp-send-redirect enable
---More--                  set icmp-accept-redirect enable
---More--                  set reachable-time 30000
---More--                  set ips-sniffer-mode disable
---More--                  set ident-accept disable
---More--                  set ipmac disable
---More--                  set status up
---More--                  set netbios-forward disable
---More--                  set wins-ip 0.0.0.0
---More--                  set type tunnel
---More--                  set netflow-sampler disable
---More--                  set sflow-sampler disable
---More--                  set src-check enable
---More--                  set sample-rate 2000
---More--                  set polling-interval 20
---More--                  set sample-direction both
---More--                  set tcp-mss 0
---More--                  set inbandwidth 0
---More--                  set outbandwidth 0
---More--                  set egress-shaping-profile ''
---More--                  set ingress-shaping-profile ''
---More--                  set spillover-threshold 0
---More--                  set ingress-spillover-threshold 0
---More--                  set weight 0
---More--                  set external disable
---More--                  set trunk disable
---More--                  set remote-ip 0.0.0.0 0.0.0.0
---More--                  set description ''
---More--                  set alias ''
---More--                  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-set l2tp-client disable
---More--                  set security-mode none
---More--                  set ike-saml-server ''
---More--                  set estimated-upstream-bandwidth 0
---More--                  set estimated-downstream-bandwidth 0
---More--                  set measured-upstream-bandwidth 0
---More--                  set measured-downstream-bandwidth 0
---More--                  set bandwidth-measure-time 0
---More--                  set monitor-bandwidth disable
---More--                  set role undefined
---More--                  set snmp-index 8
---More--                  set preserve-session-route disable
---More--                  set auto-auth-extension-device disable
---More--                  set ap-discover enable
---More--                  set switch-controller-igmp-snooping-proxy disable
---More--                  set switch-controller-igmp-snooping-fast-leave disable
---More--                  set eap-supplicant disable
---More--                  config ipv6
---More--                      set ip6-mode static
---More--                      set nd-mode basic
---More--                      set ip6-address ::/0
---More--                      unset ip6-allowaccess
---More--                      set icmp6-send-redirect enable
---More--                      set ra-send-mtu enable
---More--                      set ip6-reachable-time 0
---More--                      set ip6-retrans-time 0
---More--                      set ip6-hop-limit 0
---More--                      set dhcp6-prefix-delegation disable
---More--                      set dhcp6-information-request disable
---More--                      set ip6-send-adv disable
---More--                      set autoconf disable
---More--                      set dhcp6-relay-service disable
---More--                  end
---More--                  set dhcp-relay-source-ip 0.0.0.0
---More--                  set dhcp-relay-circuit-id ''
---More--                  set dns-server-override enable
---More--                  set dns-server-protocol cleartext
---More--                  set wccp disable
---More--              next
-
---More--              edit "ssl.root"
---More--                  set vdom "root"
---More--                  set vrf 0
---More--                  set distance 5
---More--                  set priority 1
---More--                  set dhcp-relay-interface-select-method auto
---More--                  set dhcp-relay-service disable
---More--                  set ip 0.0.0.0 0.0.0.0
---More--                  unset allowaccess
---More--                  set arpforward enable
---More--                  set broadcast-forward disable
---More--                  set bfd global
---More--                  set reachable-time 30000
---More--                  set ips-sniffer-mode disable
---More--                  set ident-accept disable
---More--                  set ipmac disable
---More--                  set status up
---More--                  set netbios-forward disable
---More--                  set wins-ip 0.0.0.0
---More--                  set type tunnel
---More--                  set netflow-sampler disable
---More--                  set sflow-sampler disable
---More--                  set src-check enable
---More--                  set sample-rate 2000
---More--                  set polling-interval 20
---More--                  set sample-direction both
---More--                  set tcp-mss 0
---More--                  set inbandwidth 0
---More--                  set outbandwidth 0
---More--                  set egress-shaping-profile ''
---More--                  set ingress-shaping-profile ''
---More--                  set spillover-threshold 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-0
---More--                  set ingress-spillover-threshold 0
---More--                  set weight 0
---More--                  set external disable
---More--                  set trunk disable
---More--                  set description ''
---More--                  set alias "SSL VPN interface"
---More--                  set l2tp-client disable
---More--                  set security-mode none
---More--                  set ike-saml-server ''
---More--                  set estimated-upstream-bandwidth 0
---More--                  set estimated-downstream-bandwidth 0
---More--                  set measured-upstream-bandwidth 0
---More--                  set measured-downstream-bandwidth 0
---More--                  set bandwidth-measure-time 0
---More--                  set monitor-bandwidth disable
---More--                  set role undefined
---More--                  set snmp-index 9
---More--                  set preserve-session-route disable
---More--                  set auto-auth-extension-device disable
---More--                  set ap-discover enable
---More--                  set switch-controller-igmp-snooping-proxy disable
---More--                  set switch-controller-igmp-snooping-fast-leave disable
---More--                  set eap-supplicant disable
---More--                  config ipv6
---More--                      set ip6-mode static
---More--                      set nd-mode basic
---More--                      set ip6-address ::/0
---More--                      unset ip6-allowaccess
---More--                      set ra-send-mtu enable
---More--                      set ip6-reachable-time 0
---More--                      set ip6-retrans-time 0
---More--                      set ip6-hop-limit 0
---More--                      set dhcp6-prefix-delegation disable
---More--                      set dhcp6-information-request disable
---More--                      set ip6-send-adv disable
---More--                      set autoconf disable
---More--                      set dhcp6-relay-service disable
---More--                  end
---More--                  set dhcp-relay-source-ip 0.0.0.0
---More--                  set dhcp-relay-circuit-id ''
---More--                  set dns-server-override enable
---More--                  set dns-server-protocol cleartext
---More--                  set wccp disable
---More--              next
---More--              edit "lan"
-
---More--                  set vdom "root"
---More--                  set vrf 0
---More--                  set fortilink disable
---More--                  set mode static
---More--                  set dhcp-relay-interface-select-method auto
---More--                  set dhcp-relay-service disable
---More--                  set ip 192.168.3.254 255.255.255.0
---More--                  set allowaccess ping https ssh snmp http fabric
---More--                  set pptp-client disable
---More--                  set arpforward enable
---More--                  set broadcast-forward disable
---More--                  set bfd global
---More--                  set l2forward disable
---More--                  set icmp-send-redirect enable
---More--                  set icmp-accept-redirect enable
---More--                  set reachable-time 30000
---More--                  set vlanforward disable
---More--                  set stpforward disable
---More--                  set ips-sniffer-mode disable
---More--                  set ident-accept disable
---More--                  set ipmac disable
---More--                  set subst disable
---More--                  set substitute-dst-mac 00:00:00:00:00:00
---More--                  set status up
---More--    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              set netbios-forward disable
---More--                  set wins-ip 0.0.0.0
---More--                  set type hard-switch
---More--                  set netflow-sampler disable
---More--                  set sflow-sampler disable
---More--                  set src-check enable
---More--                  set sample-rate 2000
---More--                  set polling-interval 20
---More--                  set sample-direction both
---More--                  set tcp-mss 0
---More--                  set inbandwidth 0
---More--                  set outbandwidth 0
---More--                  set egress-shaping-profile ''
---More--                  set ingress-shaping-profile ''
---More--                  set spillover-threshold 0
---More--                  set ingress-spillover-threshold 0
---More--                  set weight 0
---More--                  set external disable
---More--                  set trunk disable
---More--                  set description ''
---More--                  set alias "MGMT+Internet"
---More--                  set l2tp-client disable
---More--                  set security-mode none
---More--                  set ike-saml-server ''
---More--                  set stp enable
---More--                  set stp-ha-secondary priority-adjust
---More--                  set device-identification enable
---More--                  set device-user-identification enable
---More--                  set lldp-reception enable
---More--                  set lldp-transmission enable
---More--                  set lldp-network-policy ''
---More--                  set estimated-upstream-bandwidth 0
---More--                  set estimated-downstream-bandwidth 0
---More--                  set measured-upstream-bandwidth 0
---More--                  set measured-downstream-bandwidth 0
---More--                  set bandwidth-measure-time 0
---More--                  set monitor-bandwidth disable
---More--                  set role lan
---More--                  set snmp-index 10
---More--                  set secondary-IP disable
---More--                  set preserve-session-route disable
---More--                  set auto-auth-extension-device disable
---More--                  set ap-discover enable
---More--                  set ip-managed-by-fortiipam inherit-global
---More--                  set switch-controller-mgmt-vlan 4094
---More--                  set switch-controller-igmp-snooping-proxy disable
---More--                  set switch-controller-igmp-snooping-fast-leave disable
---More--                  set swc-first-create 0
---More--                  set eap-supplicant disable
---More--                  config ipv6
---More--                      set ip6-mode static
---More--                      set nd-mode basic
---More--                      set ip6-address ::/0
---More--                      unset ip6-allowaccess
---More--                      set icmp6-send-redirect enable
---More--                      set ra-send-mtu enable
---More--                      set ip6-reachable-time 0
---More--                      set ip6-retrans-time 0
---More--                      set ip6-hop-limit 0
---More--                      set dhcp6-prefix-delegation disable
---More--                      set dhcp6-information-request disable
---More--                      set ip6-send-adv disable
---More--                      set autoconf disable
---More--                      set dhcp6-relay-service disable
---More--                  end
---More--                  set priority 1
---More--                  set dhcp-relay-source-ip 0.0.0.0
---More--                  set dhcp-relay-circuit-id ''
---More--                  set dhcp-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-client-identifier ''
---More--                  set dhcp-renew-time 0
---More--                  set idle-timeout 0
---More--                  set disc-retry-timeout 1
---More--                  set padt-retry-timeout 1
---More--                  set dns-server-override enable
---More--                  set dns-server-protocol cleartext
---More--                  set wccp disable
---More--                  set drop-overlapped-fragment disable
---More--                  set drop-fragment disable
---More--                  set mtu-override disable
---More--              next
---More--              edit "fortilink"
---More--                  set vdom "root"
---More--                  set vrf 0
---More--                  set fortilink enable
---More--                  set switch-controller-source-ip outbound
---More--                  set mode static
---More--                  set dhcp-relay-interface-select-method auto
---More--                  set dhcp-relay-service disable
---More--                  set ip 10.255.1.1 255.255.255.0
---More--                  set allowaccess ping fabric
---More--                  set fail-detect disable
---More--                  set pptp-client disable
---More--                  set arpforward enable
---More--                  set broadcast-forward disable
---More--                  set bfd global
---More--                  set l2forward disable
---More--                  set icmp-send-redirect enable
---More--                  set icmp-accept-redirect enable
---More--                  set reachable-time 30000
---More--                  set vlanforward disable
---More--                  set stpforward disable
---More--                  set ips-sniffer-mode disable
---More--                  set ident-accept disable
---More--                  set ipmac disable
---More--                  set status up
---More--                  set netbios-forward disable
---More--                  set wins-ip 0.0.0.0
---More--                  set type aggregate
---More--                  set netflow-sampler disable
---More--                  set sflow-sampler disable
---More--                  set src-check enable
---More--                  set sample-rate 2000
---More--                  set polling-interval 20
---More--                  set sample-direction both
---More--                  set tcp-mss 0
---More--                  set inbandwidth 0
---More--                  set outbandwidth 0
---More--                  set egress-shaping-profile ''
---More--                  set ingress-shaping-profile ''
---More--                  set spillover-threshold 0
---More--                  set ingress-spillover-threshold 0
---More--                  set weight 0
---More--                  set external disable
---More--                  set trunk disable
---More--                  set description ''
---More--                  set alias ''
---More--                  set l2tp-client disable
---More--                  set ike-saml-server ''
---More--                  set device-identification disable
---More--                  set lldp-reception enable
---More--                  set lldp-transmission enable
---More--                  set lldp-network-policy ''
---More--                  set estimated-upstream-bandwidth 0
---More--                  set estimated-downstream-bandwidth 0
---More--                  set measured-upstream-bandwidth 0
---More--                  set measured-downstream-bandwidth 0
---More--                  set bandwidth-measure-time 0
---More--                  set monitor-bandwidth disable
---More--                  set vrrp-virtual-mac disable
---More--                  set role undefined
---More--    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              set snmp-index 11
---More--                  set secondary-IP disable
---More--                  set preserve-session-route disable
---More--                  set auto-auth-extension-device disable
---More--                  set ap-discover enable
---More--                  set fortilink-neighbor-detect fortilink
---More--                  set ip-managed-by-fortiipam inherit-global
---More--                  set fortilink-split-interface enable
---More--                  set switch-controller-netflow-collect disable
---More--                  set switch-controller-mgmt-vlan 4094
---More--                  set switch-controller-igmp-snooping-proxy disable
---More--                  set switch-controller-igmp-snooping-fast-leave disable
---More--                  set switch-controller-nac ''
---More--                  set switch-controller-dynamic ''
---More--                  set switch-controller-iot-scanning disable
---More--                  set swc-first-create 0
---More--                  set eap-supplicant disable
---More--                  config ipv6
---More--                      set ip6-mode static
---More--                      set nd-mode basic
---More--                      set ip6-address ::/0
---More--                      unset ip6-allowaccess
---More--                      set icmp6-send-redirect enable
---More--                      set ra-send-mtu enable
---More--                      set ip6-reachable-time 0
---More--                      set ip6-retrans-time 0
---More--                      set ip6-hop-limit 0
---More--                      set dhcp6-prefix-delegation disable
---More--                      set dhcp6-information-request disable
---More--                      set vrrp-virtual-mac6 disable
---More--                      set vrip6_link_local ::
---More--                      set ip6-send-adv disable
---More--                      set autoconf disable
---More--                      set dhcp6-relay-service disable
---More--                  end
---More--                  set priority 1
---More--                  set dhcp-relay-source-ip 0.0.0.0
---More--                  set dhcp-relay-circuit-id ''
---More--                  set dhcp-client-identifier ''
---More--                  set dhcp-renew-time 0
---More--                  set idle-timeout 0
---More--                  set disc-retry-timeout 1
---More--                  set padt-retry-timeout 1
---More--                  set dns-server-override enable
---More--                  set dns-server-protocol cleartext
---More--                  set wccp disable
---More--                  set drop-overlapped-fragment disable
---More--                  set drop-fragment disable
---More--                  set mtu-override disable
---More--                  set lacp-mode active
---More--                  set lacp-ha-secondary enable
---More--                  set system-id-type auto
---More--                  set lacp-speed slow
---More--                  set min-links 1
---More--                  set min-links-down operational
---More--                  set algorithm L4
---More--                  set link-up-delay 50
---More--                  set aggregate-type physical
---More--              next
---More--          end
---More--          config system physical-switch
---More--              edit "sw0"
---More--                  set age-enable disable
---More--                  set age-val 0
---More--              next
---More--          end
---More--          config system virtual-switch
---More--              edit "lan"
---More--                  set physical-switch "sw0"
---More--                  set span disable
---More--                  con
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-fig port
---More--                      edit "lan3"
---More--                          set alias ''
---More--                      next
---More--                  end
---More--              next
---More--          end
---More--          config system password-policy
---More--              set status disable
---More--          end
---More--          config system password-policy-guest-admin
---More--              set status disable
---More--          end
---More--          config system sms-server
---More--          end
---More--          config system custom-language
---More--              edit "en"
---More--                  set filename "en"
---More--                  set comments ''
---More--              next
---More--              edit "fr"
---More--                  set filename "fr"
---More--                  set comments ''
---More--              next
---More--              edit "sp"
---More--                  set filename "sp"
---More--                  set comments ''
---More--              next
---More--              edit "pg"
---More--                  set filename "pg"
---More--                  set comments ''
---More--              next
---More--              edit "x-sjis"
---More--                  set filename "x-sjis"
---More--                  set comments ''
---More--              next
---More--              edit "big5"
---More--                  set filename "big5"
---More--                  set comments ''
---More--              next
---More--              edit "GB2312"
---More--                  set filename "GB2312"
---More--                  set comments ''
---More--              next
---More--              edit "euc-kr"
---More--                  set filename "euc-kr"
---More--                  set comments ''
---More--              next
---More--          end
---More--          config system admin
---More--              edit "admin"
---More--                  set remote-auth disable
---More--                  set peer-auth disable
---More--                  set trusthost1 0.0.0.0 0.0.0.0
---More--                  set trusthost2 0.0.0.0 0.0.0.0
---More--                  set trusthost3 0.0.0.0 0.0.0.0
---More--                  set trusthost4 0.0.0.0 0.0.0.0
---More--                  set trusthost5 0.0.0.0 0.0.0.0
---More--                  set trusthost6 0.0.0.0 0.0.0.0
---More--                  set trusthost7 0.0.0.0 0.0.0.0
---More--                  set trusthost8 0.0.0.0 0.0.0.0
---More--                  set trusthost9 0.0.0.0 0.0.0.0
---More--                  set trusthost10 0.0.0.0 0.0.0.0
---More--                  set ip6-trusthost1 ::/0
---More--                  set ip6-trusthost2 ::/0
---More--                  set ip6-trusthost3 ::/0
---More--                  set ip6-trusthost4 ::/0
---More--                  set ip6-trusthost5 ::/0
---More--                  set ip6-trusthost6 ::/0
---More--                  set ip6-trusthost7 ::/0
---More--                  set ip6-trusthost8 ::/0
---More--                  set ip6-trusthost9 ::/0
---More--                  set ip6-trusthost10 ::/0
---More--                  set accprofile "super_admin"
---More--                  set comments ''
---More--                  set vdom "root"
---More--                  unset ssh-public-key1
---More--                  unset ssh-public-key2
---More--                  unset ssh-public-key3
---More--                  set ssh-certificate ''
---More--                  set schedule ''
---More--                  set two-factor disable
---More--                  set email-to ''
---More--                  set sms-server fortiguard
---More--                  set sms-phone ''
---More--           
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       set guest-auth disable
---More--                  set password ENC SH2qGtrtTxeib5G2d6mKE7y7/aOw8RU/GlPMyWfvlctPKy4fPGhtp/rjyoiotg=
---More--                  set allow-remove-admin-session enable
---More--              next
---More--          end
---More--          config system api-user
---More--              edit "checkmk-admin"
---More--                  set comments ''
---More--                  set api-key ENC SH2FPTHKe2jYF4xiRCcrAKWToIjTT14e633mTBmlpohUhOPzhiq+qPkJpAi6jQ=
---More--                  set accprofile "admin_read_checkmk"
---More--                  set schedule ''
---More--                  set cors-allow-origin ''
---More--                  set peer-auth disable
---More--                  config trusthost
---More--                      edit 1
---More--                          set type ipv4-trusthost
---More--                          set ipv4-trusthost 172.20.4.41 255.255.255.255
---More--                      next
---More--                  end
---More--              next
---More--              edit "admin-api"
---More--                  set comments ''
---More--                  set api-key ENC SH2Ylr/y9luaGMqkTvJSZg13tN+TywCTNmzUQ0D/YzrefWgOa1bLwmd8tWGIg4=
---More--                  set accprofile "admin_read_checkmk"
---More--                  set schedule ''
---More--                  set cors-allow-origin ''
---More--                  set peer-auth disable
---More--              next
---More--          end
---More--          config system sso-admin
---More--          end
---More--          config system sso-forticloud-admin
---More--          end
---More--          config system sso-fortigate-cloud-admin
---More--          end
---More--          config system fsso-polling
---More--              set status enable
---More--              set listening-port 8000
---More--              set authentication disable
---More--          end
---More--          config system ha
---More--              set group-id 0
---More--              set group-name ''
---More--              set mode standalone
---More--              set sync-packet-balance disable
---More--              set password ENC OwStN2qwIP9F+WdPd6E6RLF1rPhLKlOfyUV+7DZdHlSDE3u5C/yRmDVNNyXb5eS4nzOfOG0aLCzJ5yVaCmHjxSc8q0X5njG+mvQfKz4G99FPFnxFTg7D4/nRv8GW8yUY2uTu7nktB22lYrMEdlzVTndOAsrKjj2fnelVQnKvsiUy5Q0TuiZL/5q7U1C5GN8nUvjPhVlmMjY3dkVA
---More--              unset hbdev
---More--              set route-ttl 10
---More--              set route-wait 0
---More--              set route-hold 10
---More--              set multicast-ttl 600
---More--              set evpn-ttl 60
---More--              set sync-config enable
---More--              set encryption disable
---More--              set authentication disable
---More--              set hb-interval 2
---More--              set hb-interval-in-milliseconds 100ms
---More--              set hb-lost-threshold 6
---More--              set hello-holddown 20
---More--              set gratuitous-arps enable
---More--              set arps 5
---More--              set arps-interval 8
---More--              set session-pickup disable
---More--              set link-failed-signal disable
---More--              set upgrade-mode uninterruptible
---More--              set uninterruptible-primary-wait 30
---More--              set ha-eth-type "8890"
---More--              set hc-eth-type "8891"
---More--              set l2ep-eth-type "8893"
---More--              set ha-uptime-diff-margin 300
---More--              set standalone-config-sync disable
---More--              set override disable
---More--              set priority 128
---More--              unset monitor
---More--              unset pingserver-monitor-i
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-nterface
---More--              set failover-hold-time 0
---More--          end
---More--          config system ha-monitor
---More--              set monitor-vlan disable
---More--          end
---More--          config system storage
---More--          end
---More--          config system dns
---More--              set primary 96.45.45.45
---More--              set secondary 96.45.46.46
---More--              set protocol dot
---More--              set ssl-certificate "Fortinet_Factory"
---More--              set server-hostname "globalsdns.fortinet.net"
---More--              set ip6-primary ::
---More--              set ip6-secondary ::
---More--              set timeout 5
---More--              set retry 2
---More--              set dns-cache-limit 5000
---More--              set dns-cache-ttl 1800
---More--              set cache-notfound-responses disable
---More--              set source-ip 0.0.0.0
---More--              set interface-select-method auto
---More--              set server-select-method least-rtt
---More--              set alt-primary 0.0.0.0
---More--              set alt-secondary 0.0.0.0
---More--              set log disable
---More--              set fqdn-cache-ttl 0
---More--              set fqdn-max-refresh 3600
---More--              set fqdn-min-refresh 60
---More--          end
---More--          config system ddns
---More--          end
---More--          config system sflow
---More--          end
---More--          config system netflow
---More--              set active-flow-timeout 1800
---More--              set inactive-flow-timeout 15
---More--              set template-tx-timeout 1800
---More--              set template-tx-counter 20
---More--          end
---More--          config system replacemsg-image
---More--              edit "logo_fnet"
---More--                  set image-type png
---More--                  set image-base64 ''
---More--              next
---More--              edit "logo_fguard_wf"
---More--                  set image-type png
---More--                  set image-base64 ''
---More--              next
---More--              edit "logo_v3_fguard_app"
---More--                  set image-type png
---More--                  set image-base64 ''
---More--              next
---More--          end
---More--          config system replacemsg mail "partial"
---More--              set buffer "Fragmented emails are blocked."
---More--              set header 8bit
---More--              set format text
---More--          end
---More--          config system replacemsg http "url-block"
-
---More--              set buffer "<!DOCTYPE html>
---More--          <html lang=\"en\">
---More--              <head>
---More--                  <meta charset=\"UTF-8\">
---More--                  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=8; IE=EDGE\">
---More--                  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
---More--                  <style type=\"text/css\">
---More--                      body {
---More--                          height: 100%;
---More--                          font-family: Helvetica, Arial, sans-serif;
---More--                          color: #6a6a6a;
---More--                          margin: 0;
---More--                          display: flex;
---More--                          align-items: center;
---More--                          justify-content: center;
---More--                      }
---More--                      input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], select, textarea {
---More--    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                      color: #262626;
---More--                          vertical-align: baseline;
---More--                          margin: .2em;
---More--                          border-style: solid;
---More--                          border-width: 1px;
---More--                          border-color: #a9a9a9;
---More--                          background-color: #fff;
---More--                          box-sizing: border-box;
---More--                          padding: 2px .5em;
---More--                          appearance: none;
---More--                          border-radius: 0;
---More--                      }
---More--                      input:focus {
---More--                          border-color: #646464;
---More--                          box-shadow: 0 0 1px 0 #a2a2a2;
---More--                          outline: 0;
---More--                      }
---More--                      button {
---More--                          padding: .5em 1em;
---More--                          border: 1px solid;
---More--                          border-radius: 3px;
---More--                          min-width: 6em;
---More--                          font-weight: 400;
---More--                          font-size: .8em;
---More--                          cursor: pointer;
---More--                      }
---More--                      button.primary {
---More--                          color: #fff;
---More--                          background-color: rgb(47, 113, 178);
---More--                          border-color: rgb(34, 103, 173);
---More--                      }
---More--                      .message-container {
---More--                          height: 500px;
---More--                          width: 500px;
---More--                          padding: 0;
---More--                          margin: 10px;
---More--                      }
---More--                      .logo {
---More--                          background: url(%%IMAGE:logo_v3_fguard_app%%) no-repeat left center;
---More--                          height: 267px;
---More--                          object-fit: contain;
---More--                      }
---More--                      table {
---More--                          background-color: #fff;
---More--                          border-spacing: 0;
---More--                          margin: 1em;
---More--                      }
---More--                      table > tbody > tr > td:first-of-type:not([colspan]) {
---More--                          white-space: nowrap;
---More--                          color: rgba(0,0,0,.5);
---More--                      }
---More--                      table > tbody > tr > td:first-of-type {
---More--                          vertical-align: top;
---More--                      }
---More--                      table > tbody > tr > td {
---More--                          padding: .3em .3em;
---More--                      }
---More--                      .field {
---More--                          display: table-row;
---More--                      }
---More--                      .field > :first-child {
---More--                          display: table-cell;
---More--                          width: 20%;
---More--                      }
---More--                      .field.single > :first-child {
---More--                          display: inline;
---More--                      }
---More--                      .field > :not(:first-child) {
---More--                          width: auto;
---More--                          max-width: 100%;
---More--                          display: inline-flex;
---More--                          align-items: baseline;
---More--                          vert
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ical-align: top;
---More--                          box-sizing: border-box;
---More--                          margin: .3em;
---More--                      }
---More--                      .field > :not(:first-child) > input {
---More--                          width: 230px;
---More--                      }
---More--                      .form-footer {
---More--                          display: inline-flex;
---More--                          justify-content: flex-start;
---More--                      }
---More--                      .form-footer > * {
---More--                          margin: 1em;
---More--                      }
---More--                      .text-scrollable {
---More--                          overflow: auto;
---More--                          height: 150px;
---More--                          border: 1px solid rgb(200, 200, 200);
---More--                          padding: 5px;
---More--                          font-size: 1em;
---More--                      }
---More--                      .text-centered {
---More--                          text-align: center;
---More--                      }
---More--                      .text-container {
---More--                          margin: 1em 1.5em;
---More--                      }
---More--                      .flex-container {
---More--                          display: flex;
---More--                      }
---More--                      .flex-container.column {
---More--                          flex-direction: column;
---More--                      }
---More--                  </style>
---More--                  <title>The URL you requested has been blocked</title>
---More--              </head>
---More--              <body><div class=\"message-container\">
---More--              <div class=\"logo\"></div>
---More--              <h1>FortiGuard Intrusion Prevention - Access Blocked</h1>
---More--              <h3>Web Page Blocked</h3>
---More--              <p>The page you have requested has been blocked because the URL is banned.</p>
---More--              <table><tbody>
---More--                  <tr>
---More--                      <td>URL</td>
---More--                      <td>%%PROTOCOL%%://%%URL%%</td>
---More--                  </tr>
---More--                  <tr>
---More--                      <td>Description</td>
---More--                      <td>%%IPS_DESC%%</td>
---More--                  </tr>
---More--                  <tr>
---More--                      <td>URL Source</td>
---More--                      <td>%%URL_SOURCE%%</td>
---More--                  </tr>
---More--              </tbody></table>
---More--              <p>%%OVERRIDE%%</p>
---More--          </div></body>
---More--          </html>
---More--          "
---More--              set header http
---More--              set format html
---More--          end
---More--          config system replacemsg http "urlfilter-err"
---More--              set buffer "<!DOCTYPE html>
---More--          <html lang=\"en\">
---More--              <head>
---More--                  <meta charset=\"UTF-8\">
---More--                  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=8; IE=EDGE\">
---More--                  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
---More--                  <style type=\"text/css\">
---More--                      body {
---More--                          height: 100%;
---More--                          font-family: Helvetica, Arial, sans-serif;
---More--                          color: #6a6a6a;
---More--                          margin: 0;
---More--                          display: flex;
---More--                          align-ite
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ms: center;
---More--                          justify-content: center;
---More--                      }
---More--                      input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], select, textarea {
---More--                          color: #262626;
---More--                          vertical-align: baseline;
---More--                          margin: .2em;
---More--                          border-style: solid;
---More--                          border-width: 1px;
---More--                          border-color: #a9a9a9;
---More--                          background-color: #fff;
---More--                          box-sizing: border-box;
---More--                          padding: 2px .5em;
---More--                          appearance: none;
---More--                          border-radius: 0;
---More--                      }
---More--                      input:focus {
---More--                          border-color: #646464;
---More--                          box-shadow: 0 0 1px 0 #a2a2a2;
---More--                          outline: 0;
---More--                      }
---More--                      button {
---More--                          padding: .5em 1em;
---More--                          border: 1px solid;
---More--                          border-radius: 3px;
---More--                          min-width: 6em;
---More--                          font-weight: 400;
---More--                          font-size: .8em;
---More--                          cursor: pointer;
---More--                      }
---More--                      button.primary {
---More--                          color: #fff;
---More--                          background-color: rgb(47, 113, 178);
---More--                          border-color: rgb(34, 103, 173);
---More--                      }
---More--                      .message-container {
---More--                          height: 500px;
---More--                          width: 500px;
---More--                          padding: 0;
---More--                          margin: 10px;
---More--                      }
---More--                      .logo {
---More--                          background: url(%%IMAGE:logo_v3_fguard_app%%) no-repeat left center;
---More--                          height: 267px;
---More--                          object-fit: contain;
---More--                      }
---More--                      table {
---More--                          background-color: #fff;
---More--                          border-spacing: 0;
---More--                          margin: 1em;
---More--                      }
---More--                      table > tbody > tr > td:first-of-type:not([colspan]) {
---More--                          white-space: nowrap;
---More--                          color: rgba(0,0,0,.5);
---More--                      }
---More--                      table > tbody > tr > td:first-of-type {
---More--                          vertical-align: top;
---More--                      }
---More--                      table > tbody > tr > td {
---More--                          padding: .3em .3em;
---More--                      }
---More--                      .field {
---More--                          display: table-row;
---More--                      }
---More--                      .field > :first-child {
---More--                          display: table-cell;
---More--                          width: 20%;
---More--                      }
---More--                      .field.single > :first-child {
---More--                          display: inline;
---More--      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                }
---More--                      .field > :not(:first-child) {
---More--                          width: auto;
---More--                          max-width: 100%;
---More--                          display: inline-flex;
---More--                          align-items: baseline;
---More--                          vertical-align: top;
---More--                          box-sizing: border-box;
---More--                          margin: .3em;
---More--                      }
---More--                      .field > :not(:first-child) > input {
---More--                          width: 230px;
---More--                      }
---More--                      .form-footer {
---More--                          display: inline-flex;
---More--                          justify-content: flex-start;
---More--                      }
---More--                      .form-footer > * {
---More--                          margin: 1em;
---More--                      }
---More--                      .text-scrollable {
---More--                          overflow: auto;
---More--                          height: 150px;
---More--                          border: 1px solid rgb(200, 200, 200);
---More--                          padding: 5px;
---More--                          font-size: 1em;
---More--                      }
---More--                      .text-centered {
---More--                          text-align: center;
---More--                      }
---More--                      .text-container {
---More--                          margin: 1em 1.5em;
---More--                      }
---More--                      .flex-container {
---More--                          display: flex;
---More--                      }
---More--                      .flex-container.column {
---More--                          flex-direction: column;
---More--                      }
---More--                  </style>
---More--                  <title>Web Page Blocked</title>
---More--              </head>
---More--              <body><div class=\"message-container\">
---More--              <div class=\"logo\"></div>
---More--              <h1>Web Page Blocked</h1>
---More--              <p>%%URLFILTER_ERROR%%</p>
---More--              <table><tbody>
---More--                  <tr>
---More--                      <td>Web Filter Service Error</td>
---More--                      <td>%%URLFILTER_ERROR_DETAIL%%</td>
---More--                  </tr>
---More--              </tbody></table>
---More--          </div></body>
---More--          </html>
---More--          "
---More--              set header http
---More--              set format html
---More--          end
---More--          config system replacemsg http "infcache-block"
---More--              set buffer "<!DOCTYPE html>
---More--          <html lang=\"en\">
---More--              <head>
---More--                  <meta charset=\"UTF-8\">
---More--                  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=8; IE=EDGE\">
---More--                  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
---More--                  <style type=\"text/css\">
---More--                      body {
---More--                          height: 100%;
---More--                          font-family: Helvetica, Arial, sans-serif;
---More--                          color: #6a6a6a;
---More--                          margin: 0;
---More--                          display: flex;
---More--                          align-items: center;
---More--                          justify-content: center;
---More--                      }
---More--                      input[type=date], input[type=email], input[ty
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-pe=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], select, textarea {
---More--                          color: #262626;
---More--                          vertical-align: baseline;
---More--                          margin: .2em;
---More--                          border-style: solid;
---More--                          border-width: 1px;
---More--                          border-color: #a9a9a9;
---More--                          background-color: #fff;
---More--                          box-sizing: border-box;
---More--                          padding: 2px .5em;
---More--                          appearance: none;
---More--                          border-radius: 0;
---More--                      }
---More--                      input:focus {
---More--                          border-color: #646464;
---More--                          box-shadow: 0 0 1px 0 #a2a2a2;
---More--                          outline: 0;
---More--                      }
---More--                      button {
---More--                          padding: .5em 1em;
---More--                          border: 1px solid;
---More--                          border-radius: 3px;
---More--                          min-width: 6em;
---More--                          font-weight: 400;
---More--                          font-size: .8em;
---More--                          cursor: pointer;
---More--                      }
---More--                      button.primary {
---More--                          color: #fff;
---More--                          background-color: rgb(47, 113, 178);
---More--                          border-color: rgb(34, 103, 173);
---More--                      }
---More--                      .message-container {
---More--                          height: 500px;
---More--                          width: 500px;
---More--                          padding: 0;
---More--                          margin: 10px;
---More--                      }
---More--                      .logo {
---More--                          background: url(%%IMAGE:logo_v3_fguard_app%%) no-repeat left center;
---More--                          height: 267px;
---More--                          object-fit: contain;
---More--                      }
---More--                      table {
---More--                          background-color: #fff;
---More--                          border-spacing: 0;
---More--                          margin: 1em;
---More--                      }
---More--                      table > tbody > tr > td:first-of-type:not([colspan]) {
---More--                          white-space: nowrap;
---More--                          color: rgba(0,0,0,.5);
---More--                      }
---More--                      table > tbody > tr > td:first-of-type {
---More--                          vertical-align: top;
---More--                      }
---More--                      table > tbody > tr > td {
---More--                          padding: .3em .3em;
---More--                      }
---More--                      .field {
---More--                          display: table-row;
---More--                      }
---More--                      .field > :first-child {
---More--                          display: table-cell;
---More--                          width: 20%;
---More--                      }
---More--                      .field.single > :first-child {
---More--                          display: inline;
---More--                      }
---More--                      .field > :not(:first-child) {
---More--                          width: auto;
---More--                          max-width: 100%;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
---More--                          display: inline-flex;
---More--                          align-items: baseline;
---More--                          vertical-align: top;
---More--                          box-sizing: border-box;
---More--                          margin: .3em;
---More--                      }
---More--                      .field > :not(:first-child) > input {
---More--                          width: 230px;
---More--                      }
---More--                      .form-footer {
---More--                          display: inline-flex;
---More--                          justify-content: flex-start;
---More--                      }
---More--                      .form-footer > * {
---More--                          margin: 1em;
---More--                      }
---More--                      .text-scrollable {
---More--                          overflow: auto;
---More--                          height: 150px;
---More--                          border: 1px solid rgb(200, 200, 200);
---More--                          padding: 5px;
---More--                          font-size: 1em;
---More--                      }
---More--                      .text-centered {
---More--                          text-align: center;
---More--                      }
---More--                      .text-container {
---More--                          margin: 1em 1.5em;
---More--                      }
---More--                      .flex-container {
---More--                          display: flex;
---More--                      }
---More--                      .flex-container.column {
---More--                          flex-direction: column;
---More--                      }
---More--                  </style>
---More--                  <title>High Security Alert</title>
---More--              </head>
---More--              <body><div class=\"message-container\">
---More--              <div class=\"logo\"></div>
---More--              <h1>High Security Alert</h1>
---More--              <p>The URL you requested was previously found to be infected.</p>
---More--              <table><tbody>
---More--                  <tr>
---More--                      <td>URL</td>
---More--                      <td>%%PROTOCOL%%://%%URL%%</td>
---More--                  </tr>
---More--              </tbody></table>
---More--          </div></body>
---More--          </html>
---More--          "
---More--              set header http
---More--              set format html
---More--          end
---More--          config system replacemsg http "http-contenttypeblock"
---More--              set buffer "<!DOCTYPE html>
---More--          <html lang=\"en\">
---More--              <head>
---More--                  <meta charset=\"UTF-8\">
---More--                  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=8; IE=EDGE\">
---More--                  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
---More--                  <style type=\"text/css\">
---More--                      body {
---More--                          height: 100%;
---More--                          font-family: Helvetica, Arial, sans-serif;
---More--                          color: #6a6a6a;
---More--                          margin: 0;
---More--                          display: flex;
---More--                          align-items: center;
---More--                          justify-content: center;
---More--                      }
---More--                      input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], select, textarea {
---More--       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                   color: #262626;
---More--                          vertical-align: baseline;
---More--                          margin: .2em;
---More--                          border-style: solid;
---More--                          border-width: 1px;
---More--                          border-color: #a9a9a9;
---More--                          background-color: #fff;
---More--                          box-sizing: border-box;
---More--                          padding: 2px .5em;
---More--                          appearance: none;
---More--                          border-radius: 0;
---More--                      }
---More--                      input:focus {
---More--                          border-color: #646464;
---More--                          box-shadow: 0 0 1px 0 #a2a2a2;
---More--                          outline: 0;
---More--                      }
---More--                      button {
---More--                          padding: .5em 1em;
---More--                          border: 1px solid;
---More--                          border-radius: 3px;
---More--                          min-width: 6em;
---More--                          font-weight: 400;
---More--                          font-size: .8em;
---More--                          cursor: pointer;
---More--                      }
---More--                      button.primary {
---More--                          color: #fff;
---More--                          background-color: rgb(47, 113, 178);
---More--                          border-color: rgb(34, 103, 173);
---More--                      }
---More--                      .message-container {
---More--                          height: 500px;
---More--                          width: 500px;
---More--                          padding: 0;
---More--                          margin: 10px;
---More--                      }
---More--                      .logo {
---More--                          background: url(%%IMAGE:logo_v3_fguard_app%%) no-repeat left center;
---More--                          height: 267px;
---More--                          object-fit: contain;
---More--                      }
---More--                      table {
---More--                          background-color: #fff;
---More--                          border-spacing: 0;
---More--                          margin: 1em;
---More--                      }
---More--                      table > tbody > tr > td:first-of-type:not([colspan]) {
---More--                          white-space: nowrap;
---More--                          color: rgba(0,0,0,.5);
---More--                      }
---More--                      table > tbody > tr > td:first-of-type {
---More--                          vertical-align: top;
---More--                      }
---More--                      table > tbody > tr > td {
---More--                          padding: .3em .3em;
---More--                      }
---More--                      .field {
---More--                          display: table-row;
---More--                      }
---More--                      .field > :first-child {
---More--                          display: table-cell;
---More--                          width: 20%;
---More--                      }
---More--                      .field.single > :first-child {
---More--                          display: inline;
---More--                      }
---More--                      .field > :not(:first-child) {
---More--                          width: auto;
---More--                          max-width: 100%;
---More--                          display: inline-flex;
---More--                          align-items: baseline;
---More--                          vertica
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-l-align: top;
---More--                          box-sizing: border-box;
---More--                          margin: .3em;
---More--                      }
---More--                      .field > :not(:first-child) > input {
---More--                          width: 230px;
---More--                      }
---More--                      .form-footer {
---More--                          display: inline-flex;
---More--                          justify-content: flex-start;
---More--                      }
---More--                      .form-footer > * {
---More--                          margin: 1em;
---More--                      }
---More--                      .text-scrollable {
---More--                          overflow: auto;
---More--                          height: 150px;
---More--                          border: 1px solid rgb(200, 200, 200);
---More--                          padding: 5px;
---More--                          font-size: 1em;
---More--                      }
---More--                      .text-centered {
---More--                          text-align: center;
---More--                      }
---More--                      .text-container {
---More--                          margin: 1em 1.5em;
---More--                      }
---More--                      .flex-container {
---More--                          display: flex;
---More--                      }
---More--                      .flex-container.column {
---More--                          flex-direction: column;
---More--                      }
---More--                  </style>
---More--                  <title>Attention</title>
---More--              </head>
---More--              <body><div class=\"message-container\">
---More--              <div class=\"logo\"></div>
---More--              <h1>Attention</h1>
---More--              <p>Content type not permitted.</p>
---More--              <table><tbody>
---More--                  <tr>
---More--                      <td>URL</td>
---More--                      <td>%%PROTOCOL%%://%%URL%%</td>
---More--                  </tr>
---More--              </tbody></table>
---More--              <p>%%OVERRIDE%%</p>
---More--          </div></body>
---More--          </html>
---More--          "
---More--              set header http
---More--              set format html
---More--          end
---More--          config system replacemsg http "https-invalid-cert-block"
---More--              set buffer "<!DOCTYPE html>
---More--          <html lang=\"en\">
---More--              <head>
---More--                  <meta charset=\"UTF-8\">
---More--                  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=8; IE=EDGE\">
---More--                  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
---More--                  <style type=\"text/css\">
---More--                      body {
---More--                          height: 100%;
---More--                          font-family: Helvetica, Arial, sans-serif;
---More--                          color: #6a6a6a;
---More--                          margin: 0;
---More--                          display: flex;
---More--                          align-items: center;
---More--                          justify-content: center;
---More--                      }
---More--                      input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], select, textarea {
---More--                          color: #262626;
---More--                          vertical-align: baseline;
---More--                          margin: .2em;
---More--       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                   border-style: solid;
---More--                          border-width: 1px;
---More--                          border-color: #a9a9a9;
---More--                          background-color: #fff;
---More--                          box-sizing: border-box;
---More--                          padding: 2px .5em;
---More--                          appearance: none;
---More--                          border-radius: 0;
---More--                      }
---More--                      input:focus {
---More--                          border-color: #646464;
---More--                          box-shadow: 0 0 1px 0 #a2a2a2;
---More--                          outline: 0;
---More--                      }
---More--                      button {
---More--                          padding: .5em 1em;
---More--                          border: 1px solid;
---More--                          border-radius: 3px;
---More--                          min-width: 6em;
---More--                          font-weight: 400;
---More--                          font-size: .8em;
---More--                          cursor: pointer;
---More--                      }
---More--                      button.primary {
---More--                          color: #fff;
---More--                          background-color: rgb(47, 113, 178);
---More--                          border-color: rgb(34, 103, 173);
---More--                      }
---More--                      .message-container {
---More--                          height: 500px;
---More--                          width: 500px;
---More--                          padding: 0;
---More--                          margin: 10px;
---More--                      }
---More--                      .logo {
---More--                          background: url(%%IMAGE:logo_v3_fguard_app%%) no-repeat left center;
---More--                          height: 267px;
---More--                          object-fit: contain;
---More--                      }
---More--                      table {
---More--                          background-color: #fff;
---More--                          border-spacing: 0;
---More--                          margin: 1em;
---More--                      }
---More--                      table > tbody > tr > td:first-of-type:not([colspan]) {
---More--                          white-space: nowrap;
---More--                          color: rgba(0,0,0,.5);
---More--                      }
---More--                      table > tbody > tr > td:first-of-type {
---More--                          vertical-align: top;
---More--                      }
---More--                      table > tbody > tr > td {
---More--                          padding: .3em .3em;
---More--                      }
---More--                      .field {
---More--                          display: table-row;
---More--                      }
---More--                      .field > :first-child {
---More--                          display: table-cell;
---More--                          width: 20%;
---More--                      }
---More--                      .field.single > :first-child {
---More--                          display: inline;
---More--                      }
---More--                      .field > :not(:first-child) {
---More--                          width: auto;
---More--                          max-width: 100%;
---More--                          display: inline-flex;
---More--                          align-items: baseline;
---More--                          vertical-align: top;
---More--                          box-sizing: border-box;
---More--                          margin: .3em;
---More--                      }
---Mor
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-e--                      .field > :not(:first-child) > input {
---More--                          width: 230px;
---More--                      }
---More--                      .form-footer {
---More--                          display: inline-flex;
---More--                          justify-content: flex-start;
---More--                      }
---More--                      .form-footer > * {
---More--                          margin: 1em;
---More--                      }
---More--                      .text-scrollable {
---More--                          overflow: auto;
---More--                          height: 150px;
---More--                          border: 1px solid rgb(200, 200, 200);
---More--                          padding: 5px;
---More--                          font-size: 1em;
---More--                      }
---More--                      .text-centered {
---More--                          text-align: center;
---More--                      }
---More--                      .text-container {
---More--                          margin: 1em 1.5em;
---More--                      }
---More--                      .flex-container {
---More--                          display: flex;
---More--                      }
---More--                      .flex-container.column {
---More--                          flex-direction: column;
---More--                      }
---More--                  </style>
---More--                  <title>Invalid Connection</title>
---More--              </head>
---More--              <body><div class=\"message-container\">
---More--              <div class=\"logo\"></div>
---More--              <h1>%%FORTIGUARD_WF%%</h1>
---More--              <h3>This Connection is Invalid. %%CERT_INVL_REASON%%</h3>
---More--              <p>A secure connection to %%HOSTNAME%% cannot be established.</p>
---More--              <p>When you try to connect securely, sites will present trusted identification to prove that you are going to the right place. However, this site\'s identity can\'t be verified.</p>
---More--              <table><tbody>
---More--                  <tr>
---More--                      <td>Site</td>
---More--                      <td>%%HOSTNAME%%</td>
---More--                  </tr>
---More--                  <tr>
---More--                      <td>Certificate CN</td>
---More--                      <td>%%CN%%</td>
---More--                  </tr>
---More--                  <tr>
---More--                      <td>Certificate Authority</td>
---More--                      <td>%%AUTHORITY%%</td>
---More--                  </tr>
---More--                  <tr>
---More--                      <td>Certificate Validity</td>
---More--                      <td>
---More--                          <div>Not Before: %%START_VALID%%</div>
---More--                          <div>Not After: %%END_VALID%%</div>
---More--                      </td>
---More--                  </tr>
---More--                  <tr>
---More--                      <td>Certificate Chain</td>
---More--                      <td><pre>%%CERT_CHAIN%%</pre></td>
---More--                  </tr>
---More--              </tbody></table>
---More--          </div></body>
---More--          </html>
---More--          "
---More--              set header http
---More--              set format html
---More--          end
---More--          config system replacemsg http "https-untrusted-cert-block"
---More--              set buffer "<!DOCTYPE html>
---More--          <html lang=\"en\">
---More--              <head>
---More--                  <meta charset=\"UTF-8\">
---More--                  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=8; IE=EDGE\">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
---More--                  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
---More--                  <style type=\"text/css\">
---More--                      body {
---More--                          height: 100%;
---More--                          font-family: Helvetica, Arial, sans-serif;
---More--                          color: #6a6a6a;
---More--                          margin: 0;
---More--                          display: flex;
---More--                          align-items: center;
---More--                          justify-content: center;
---More--                      }
---More--                      input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], select, textarea {
---More--                          color: #262626;
---More--                          vertical-align: baseline;
---More--                          margin: .2em;
---More--                          border-style: solid;
---More--                          border-width: 1px;
---More--                          border-color: #a9a9a9;
---More--                          background-color: #fff;
---More--                          box-sizing: border-box;
---More--                          padding: 2px .5em;
---More--                          appearance: none;
---More--                          border-radius: 0;
---More--                      }
---More--                      input:focus {
---More--                          border-color: #646464;
---More--                          box-shadow: 0 0 1px 0 #a2a2a2;
---More--                          outline: 0;
---More--                      }
---More--                      button {
---More--                          padding: .5em 1em;
---More--                          border: 1px solid;
---More--                          border-radius: 3px;
---More--                          min-width: 6em;
---More--                          font-weight: 400;
---More--                          font-size: .8em;
---More--                          cursor: pointer;
---More--                      }
---More--                      button.primary {
---More--                          color: #fff;
---More--                          background-color: rgb(47, 113, 178);
---More--                          border-color: rgb(34, 103, 173);
---More--                      }
---More--                      .message-container {
---More--                          height: 500px;
---More--                          width: 500px;
---More--                          padding: 0;
---More--                          margin: 10px;
---More--                      }
---More--                      .logo {
---More--                          background: url(%%IMAGE:logo_v3_fguard_app%%) no-repeat left center;
---More--                          height: 267px;
---More--                          object-fit: contain;
---More--                      }
---More--                      table {
---More--                          background-color: #fff;
---More--                          border-spacing: 0;
---More--                          margin: 1em;
---More--                      }
---More--                      table > tbody > tr > td:first-of-type:not([colspan]) {
---More--                          white-space: nowrap;
---More--                          color: rgba(0,0,0,.5);
---More--                      }
---More--                      table > tbody > tr > td:first-of-type {
---More--                          vertical-align: top;
---More--                      }
---More--                      table > tbody > tr > td {
---More--                      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    padding: .3em .3em;
---More--                      }
---More--                      .field {
---More--                          display: table-row;
---More--                      }
---More--                      .field > :first-child {
---More--                          display: table-cell;
---More--                          width: 20%;
---More--                      }
---More--                      .field.single > :first-child {
---More--                          display: inline;
---More--                      }
---More--                      .field > :not(:first-child) {
---More--                          width: auto;
---More--                          max-width: 100%;
---More--                          display: inline-flex;
---More--                          align-items: baseline;
---More--                          vertical-align: top;
---More--                          box-sizing: border-box;
---More--                          margin: .3em;
---More--                      }
---More--                      .field > :not(:first-child) > input {
---More--                          width: 230px;
---More--                      }
---More--                      .form-footer {
---More--                          display: inline-flex;
---More--                          justify-content: flex-start;
---More--                      }
---More--                      .form-footer > * {
---More--                          margin: 1em;
---More--                      }
---More--                      .text-scrollable {
---More--                          overflow: auto;
---More--                          height: 150px;
---More--                          border: 1px solid rgb(200, 200, 200);
---More--                          padding: 5px;
---More--                          font-size: 1em;
---More--                      }
---More--                      .text-centered {
---More--                          text-align: center;
---More--                      }
---More--                      .text-container {
---More--                          margin: 1em 1.5em;
---More--                      }
---More--                      .flex-container {
---More--                          display: flex;
---More--                      }
---More--                      .flex-container.column {
---More--                          flex-direction: column;
---More--                      }
---More--                  </style>
---More--                  <title>Untrusted Connection</title>
---More--              </head>
---More--              <body><div class=\"message-container\">
---More--              <div class=\"logo\"></div>
---More--              <h1>%%FORTIGUARD_WF%%</h1>
---More--              <h3>This Connection is Untrusted</h3>
---More--              <p>A secure connection to %%HOSTNAME%% cannot be established.</p>
---More--              <p>When you try to connect securely, sites will present trusted identification to prove that you are going to the right place. The identity for this site can\'t be verified.</p>
---More--              <table><tbody>
---More--                  <tr>
---More--                      <td>Site</td>
---More--                      <td>%%HOSTNAME%%</td>
---More--                  </tr>
---More--                  <tr>
---More--                      <td>Certificate CN</td>
---More--                      <td>%%CN%%</td>
---More--                  </tr>
---More--                  <tr>
---More--                      <td>Certificate Authority</td>
---More--                      <td>%%AUTHORITY%%</td>
---More--                  </tr>
---More--                  <tr>
---More--                      <td>Certificate Validity</td>
---More--                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <td>
---More--                          <div>Not Before: %%START_VALID%%</div>
---More--                          <div>Not After: %%END_VALID%%</div>
---More--                      </td>
---More--                  </tr>
---More--                  <tr>
---More--                      <td>Certificate Chain</td>
---More--                      <td><pre>%%CERT_CHAIN%%</pre></td>
---More--                  </tr>
---More--              </tbody></table>
---More--          </div></body>
---More--          </html>
---More--          "
---More--              set header http
---More--              set format html
---More--          end
---More--          config system replacemsg http "https-blocklisted-cert-block"
---More--              set buffer "<!DOCTYPE html>
---More--          <html lang=\"en\">
---More--              <head>
---More--                  <meta charset=\"UTF-8\">
---More--                  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=8; IE=EDGE\">
---More--                  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
---More--                  <style type=\"text/css\">
---More--                      body {
---More--                          height: 100%;
---More--                          font-family: Helvetica, Arial, sans-serif;
---More--                          color: #6a6a6a;
---More--                          margin: 0;
---More--                          display: flex;
---More--                          align-items: center;
---More--                          justify-content: center;
---More--                      }
---More--                      input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], select, textarea {
---More--                          color: #262626;
---More--                          vertical-align: baseline;
---More--                          margin: .2em;
---More--                          border-style: solid;
---More--                          border-width: 1px;
---More--                          border-color: #a9a9a9;
---More--                          background-color: #fff;
---More--                          box-sizing: border-box;
---More--                          padding: 2px .5em;
---More--                          appearance: none;
---More--                          border-radius: 0;
---More--                      }
---More--                      input:focus {
---More--                          border-color: #646464;
---More--                          box-shadow: 0 0 1px 0 #a2a2a2;
---More--                          outline: 0;
---More--                      }
---More--                      button {
---More--                          padding: .5em 1em;
---More--                          border: 1px solid;
---More--                          border-radius: 3px;
---More--                          min-width: 6em;
---More--                          font-weight: 400;
---More--                          font-size: .8em;
---More--                          cursor: pointer;
---More--                      }
---More--                      button.primary {
---More--                          color: #fff;
---More--                          background-color: rgb(47, 113, 178);
---More--                          border-color: rgb(34, 103, 173);
---More--                      }
---More--                      .message-container {
---More--                          height: 500px;
---More--                          width: 500px;
---More--                          padding: 0;
---More--                          margin: 10px;
---More--                      }
---More--  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    .logo {
---More--                          background: url(%%IMAGE:logo_v3_fguard_app%%) no-repeat left center;
---More--                          height: 267px;
---More--                          object-fit: contain;
---More--                      }
---More--                      table {
---More--                          background-color: #fff;
---More--                          border-spacing: 0;
---More--                          margin: 1em;
---More--                      }
---More--                      table > tbody > tr > td:first-of-type:not([colspan]) {
---More--                          white-space: nowrap;
---More--                          color: rgba(0,0,0,.5);
---More--                      }
---More--                      table > tbody > tr > td:first-of-type {
---More--                          vertical-align: top;
---More--                      }
---More--                      table > tbody > tr > td {
---More--                          padding: .3em .3em;
---More--                      }
---More--                      .field {
---More--                          display: table-row;
---More--                      }
---More--                      .field > :first-child {
---More--                          display: table-cell;
---More--                          width: 20%;
---More--                      }
---More--                      .field.single > :first-child {
---More--                          display: inline;
---More--                      }
---More--                      .field > :not(:first-child) {
---More--                          width: auto;
---More--                          max-width: 100%;
---More--                          display: inline-flex;
---More--                          align-items: baseline;
---More--                          vertical-align: top;
---More--                          box-sizing: border-box;
---More--                          margin: .3em;
---More--                      }
---More--                      .field > :not(:first-child) > input {
---More--                          width: 230px;
---More--                      }
---More--                      .form-footer {
---More--                          display: inline-flex;
---More--                          justify-content: flex-start;
---More--                      }
---More--                      .form-footer > * {
---More--                          margin: 1em;
---More--                      }
---More--                      .text-scrollable {
---More--                          overflow: auto;
---More--                          height: 150px;
---More--                          border: 1px solid rgb(200, 200, 200);
---More--                          padding: 5px;
---More--                          font-size: 1em;
---More--                      }
---More--                      .text-centered {
---More--                          text-align: center;
---More--                      }
---More--                      .text-container {
---More--                          margin: 1em 1.5em;
---More--                      }
---More--                      .flex-container {
---More--                          display: flex;
---More--                      }
---More--                      .flex-container.column {
---More--                          flex-direction: column;
---More--                      }
---More--                  </style>
---More--                  <title>Blocked Connection</title>
---More--              </head>
---More--              <body><div class=\"message-container\">
---More--              <div class=\"logo\"></div>
---More--              <h1>%%FORTIGUARD_WF%%</h1>
---More--              <h3>This Co
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-nnection is Blocked</h3>
---More--              <p>A secure connection to %%HOSTNAME%% cannot be established.</p>
---More--              <p>When you try to connect securely, sites will present identification to prove that you are going to the right place. The identity for this site is blocked.</p>
---More--              <table><tbody>
---More--                  <tr>
---More--                      <td>Site</td>
---More--                      <td>%%HOSTNAME%%</td>
---More--                  </tr>
---More--                  <tr>
---More--                      <td>Certificate CN</td>
---More--                      <td>%%CN%%</td>
---More--                  </tr>
---More--                  <tr>
---More--                      <td>Certificate Authority</td>
---More--                      <td>%%AUTHORITY%%</td>
---More--                  </tr>
---More--                  <tr>
---More--                      <td>Certificate Validity</td>
---More--                      <td>
---More--                          <div>Not Before: %%START_VALID%%</div>
---More--                          <div>Not After: %%END_VALID%%</div>
---More--                      </td>
---More--                  </tr>
---More--                  <tr>
---More--                      <td>Certificate Chain</td>
---More--                      <td><pre>%%CERT_CHAIN%%</pre></td>
---More--                  </tr>
---More--              </tbody></table>
---More--          </div></body>
---More--          </html>
---More--          "
---More--              set header http
---More--              set format html
---More--          end
---More--          config system replacemsg http "https-ech-block"
---More--              set buffer "<!DOCTYPE html>
---More--          <html lang=\"en\">
---More--              <head>
---More--                  <meta charset=\"UTF-8\">
---More--                  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=8; IE=EDGE\">
---More--                  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
---More--                  <style type=\"text/css\">
---More--                      body {
---More--                          height: 100%;
---More--                          font-family: Helvetica, Arial, sans-serif;
---More--                          color: #6a6a6a;
---More--                          margin: 0;
---More--                          display: flex;
---More--                          align-items: center;
---More--                          justify-content: center;
---More--                      }
---More--                      input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], select, textarea {
---More--                          color: #262626;
---More--                          vertical-align: baseline;
---More--                          margin: .2em;
---More--                          border-style: solid;
---More--                          border-width: 1px;
---More--                          border-color: #a9a9a9;
---More--                          background-color: #fff;
---More--                          box-sizing: border-box;
---More--                          padding: 2px .5em;
---More--                          appearance: none;
---More--                          border-radius: 0;
---More--                      }
---More--                      input:focus {
---More--                          border-color: #646464;
---More--                          box-shadow: 0 0 1px 0 #a2a2a2;
---More--                          outline: 0;
---More--                      }
---More--                      button {
---More--                          padding: .5em 1em;
---More--                          border: 1px solid;
---More--                          border-radius: 3px;
---More--                          min-width: 6em;
---More--                          font-weight: 400;
---More--                          font-size: .8em;
---More--                          cursor: pointer;
---More--                      }
---More--                      button.primary {
---More--                          color: #fff;
---More--                          background-color: rgb(47, 113, 178);
---More--                          border-color: rgb(34, 103, 173);
---More--                      }
---More--                      .message-container {
---More--                          height: 500px;
---More--                          width: 500px;
---More--                          padding: 0;
---More--                          margin: 10px;
---More--                      }
---More--                      .logo {
---More--                          background: url(%%IMAGE:logo_v3_fguard_app%%) no-repeat left center;
---More--                          height: 267px;
---More--                          object-fit: contain;
---More--                      }
---More--                      table {
---More--                          background-color: #fff;
---More--                          border-spacing: 0;
---More--                          margin: 1em;
---More--                      }
---More--                      table > tbody > tr > td:first-of-type:not([colspan]) {
---More--                          white-space: nowrap;
---More--                          color: rgba(0,0,0,.5);
---More--                      }
---More--                      table > tbody > tr > td:first-of-type {
---More--                          vertical-align: top;
---More--                      }
---More--                      table > tbody > tr > td {
---More--                          padding: .3em .3em;
---More--                      }
---More--                      .field {
---More--                          display: table-row;
---More--                      }
---More--                      .field > :first-child {
---More--                          display: table-cell;
---More--                          width: 20%;
---More--                      }
---More--        
-
-FLA-40F-ISP login: 
